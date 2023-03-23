@@ -29,7 +29,7 @@ Partial Class MainForm
         'RegisterBtn
         '
         Me.RegisterBtn.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.RegisterBtn.Location = New System.Drawing.Point(205, 193)
+        Me.RegisterBtn.Location = New System.Drawing.Point(479, 328)
         Me.RegisterBtn.Name = "RegisterBtn"
         Me.RegisterBtn.Size = New System.Drawing.Size(128, 64)
         Me.RegisterBtn.TabIndex = 0
@@ -39,7 +39,7 @@ Partial Class MainForm
         'LoginBtn
         '
         Me.LoginBtn.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.LoginBtn.Location = New System.Drawing.Point(467, 193)
+        Me.LoginBtn.Location = New System.Drawing.Point(741, 328)
         Me.LoginBtn.Name = "LoginBtn"
         Me.LoginBtn.Size = New System.Drawing.Size(128, 64)
         Me.LoginBtn.TabIndex = 1
@@ -50,9 +50,10 @@ Partial Class MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(1348, 721)
         Me.Controls.Add(Me.LoginBtn)
         Me.Controls.Add(Me.RegisterBtn)
+        Me.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Name = "MainForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "VendIT"

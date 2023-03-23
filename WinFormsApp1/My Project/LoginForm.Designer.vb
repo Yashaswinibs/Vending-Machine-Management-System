@@ -34,7 +34,7 @@ Partial Class LoginForm
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.Location = New System.Drawing.Point(198, 127)
+        Me.Label1.Location = New System.Drawing.Point(463, 256)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(99, 28)
         Me.Label1.TabIndex = 0
@@ -44,7 +44,7 @@ Partial Class LoginForm
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label2.Location = New System.Drawing.Point(198, 196)
+        Me.Label2.Location = New System.Drawing.Point(463, 325)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(93, 28)
         Me.Label2.TabIndex = 1
@@ -53,7 +53,7 @@ Partial Class LoginForm
         'UsernameTB
         '
         Me.UsernameTB.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.UsernameTB.Location = New System.Drawing.Point(346, 120)
+        Me.UsernameTB.Location = New System.Drawing.Point(611, 249)
         Me.UsernameTB.Name = "UsernameTB"
         Me.UsernameTB.Size = New System.Drawing.Size(275, 34)
         Me.UsernameTB.TabIndex = 2
@@ -61,7 +61,7 @@ Partial Class LoginForm
         'PasswordTB
         '
         Me.PasswordTB.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.PasswordTB.Location = New System.Drawing.Point(346, 192)
+        Me.PasswordTB.Location = New System.Drawing.Point(611, 321)
         Me.PasswordTB.Name = "PasswordTB"
         Me.PasswordTB.Size = New System.Drawing.Size(275, 34)
         Me.PasswordTB.TabIndex = 3
@@ -70,7 +70,7 @@ Partial Class LoginForm
         'LoginBtn
         '
         Me.LoginBtn.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.LoginBtn.Location = New System.Drawing.Point(332, 294)
+        Me.LoginBtn.Location = New System.Drawing.Point(597, 423)
         Me.LoginBtn.Name = "LoginBtn"
         Me.LoginBtn.Size = New System.Drawing.Size(128, 48)
         Me.LoginBtn.TabIndex = 4
@@ -80,9 +80,10 @@ Partial Class LoginForm
         'backLink
         '
         Me.backLink.AutoSize = True
-        Me.backLink.Location = New System.Drawing.Point(703, 23)
+        Me.backLink.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.backLink.Location = New System.Drawing.Point(1250, 20)
         Me.backLink.Name = "backLink"
-        Me.backLink.Size = New System.Drawing.Size(54, 20)
+        Me.backLink.Size = New System.Drawing.Size(71, 28)
         Me.backLink.TabIndex = 9
         Me.backLink.TabStop = True
         Me.backLink.Text = "< Back"
@@ -91,14 +92,16 @@ Partial Class LoginForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(1348, 721)
         Me.Controls.Add(Me.backLink)
         Me.Controls.Add(Me.LoginBtn)
         Me.Controls.Add(Me.PasswordTB)
         Me.Controls.Add(Me.UsernameTB)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Name = "LoginForm"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "LoginForm"
         Me.ResumeLayout(False)
         Me.PerformLayout()

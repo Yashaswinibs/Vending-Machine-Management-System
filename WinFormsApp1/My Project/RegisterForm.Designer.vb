@@ -40,7 +40,7 @@ Partial Class RegisterForm
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.Location = New System.Drawing.Point(155, 128)
+        Me.Label1.Location = New System.Drawing.Point(429, 266)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(99, 28)
         Me.Label1.TabIndex = 100
@@ -50,7 +50,7 @@ Partial Class RegisterForm
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label2.Location = New System.Drawing.Point(155, 178)
+        Me.Label2.Location = New System.Drawing.Point(429, 316)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(93, 28)
         Me.Label2.TabIndex = 1
@@ -59,7 +59,7 @@ Partial Class RegisterForm
         'UsernameTB
         '
         Me.UsernameTB.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.UsernameTB.Location = New System.Drawing.Point(371, 125)
+        Me.UsernameTB.Location = New System.Drawing.Point(645, 263)
         Me.UsernameTB.Name = "UsernameTB"
         Me.UsernameTB.Size = New System.Drawing.Size(275, 34)
         Me.UsernameTB.TabIndex = 2
@@ -67,7 +67,7 @@ Partial Class RegisterForm
         'PasswordTB
         '
         Me.PasswordTB.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.PasswordTB.Location = New System.Drawing.Point(371, 175)
+        Me.PasswordTB.Location = New System.Drawing.Point(645, 313)
         Me.PasswordTB.Name = "PasswordTB"
         Me.PasswordTB.Size = New System.Drawing.Size(275, 34)
         Me.PasswordTB.TabIndex = 3
@@ -76,7 +76,7 @@ Partial Class RegisterForm
         'ConfirmPasswordTB
         '
         Me.ConfirmPasswordTB.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.ConfirmPasswordTB.Location = New System.Drawing.Point(371, 247)
+        Me.ConfirmPasswordTB.Location = New System.Drawing.Point(645, 385)
         Me.ConfirmPasswordTB.Name = "ConfirmPasswordTB"
         Me.ConfirmPasswordTB.Size = New System.Drawing.Size(275, 34)
         Me.ConfirmPasswordTB.TabIndex = 4
@@ -86,7 +86,7 @@ Partial Class RegisterForm
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label3.Location = New System.Drawing.Point(155, 250)
+        Me.Label3.Location = New System.Drawing.Point(429, 388)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(168, 28)
         Me.Label3.TabIndex = 5
@@ -94,7 +94,7 @@ Partial Class RegisterForm
         '
         'RegisterBtn
         '
-        Me.RegisterBtn.Location = New System.Drawing.Point(336, 322)
+        Me.RegisterBtn.Location = New System.Drawing.Point(610, 460)
         Me.RegisterBtn.Name = "RegisterBtn"
         Me.RegisterBtn.Size = New System.Drawing.Size(128, 48)
         Me.RegisterBtn.TabIndex = 6
@@ -104,9 +104,10 @@ Partial Class RegisterForm
         'backLink
         '
         Me.backLink.AutoSize = True
-        Me.backLink.Location = New System.Drawing.Point(695, 20)
+        Me.backLink.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.backLink.Location = New System.Drawing.Point(1250, 20)
         Me.backLink.Name = "backLink"
-        Me.backLink.Size = New System.Drawing.Size(54, 20)
+        Me.backLink.Size = New System.Drawing.Size(71, 28)
         Me.backLink.TabIndex = 8
         Me.backLink.TabStop = True
         Me.backLink.Text = "< Back"
@@ -115,7 +116,7 @@ Partial Class RegisterForm
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label4.Location = New System.Drawing.Point(155, 74)
+        Me.Label4.Location = New System.Drawing.Point(429, 212)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(100, 28)
         Me.Label4.TabIndex = 9
@@ -124,7 +125,7 @@ Partial Class RegisterForm
         'FullNameTB
         '
         Me.FullNameTB.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.FullNameTB.Location = New System.Drawing.Point(371, 74)
+        Me.FullNameTB.Location = New System.Drawing.Point(645, 212)
         Me.FullNameTB.Name = "FullNameTB"
         Me.FullNameTB.Size = New System.Drawing.Size(275, 34)
         Me.FullNameTB.TabIndex = 1
@@ -139,7 +140,7 @@ Partial Class RegisterForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(1348, 721)
         Me.Controls.Add(Me.FullNameTB)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.backLink)
@@ -150,7 +151,9 @@ Partial Class RegisterForm
         Me.Controls.Add(Me.UsernameTB)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Name = "RegisterForm"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "RegisterForm"
         Me.ResumeLayout(False)
         Me.PerformLayout()
