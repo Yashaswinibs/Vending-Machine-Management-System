@@ -30,12 +30,12 @@ Public Class RegisterForm
     End Sub
 
 
-    Private Function ClearInputs()
+    Private Sub ClearInputs()
         FullNameTB.Text = ""
         UsernameTB.Text = ""
         PasswordTB.Text = ""
         ConfirmPasswordTB.Text = ""
-    End Function
+    End Sub
 
 
     Private Sub backLink_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles backLink.LinkClicked

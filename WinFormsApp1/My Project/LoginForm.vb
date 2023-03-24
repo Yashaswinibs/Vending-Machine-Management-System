@@ -26,10 +26,10 @@ Public Class LoginForm
     End Sub
 
 
-    Private Function ClearInputs()
+    Private Sub ClearInputs()
         UsernameTB.Text = ""
         PasswordTB.Text = ""
-    End Function
+    End Sub
 
     Private Sub backLink_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles backLink.LinkClicked
         Me.Hide()

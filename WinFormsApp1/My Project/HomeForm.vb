@@ -3,33 +3,16 @@
 Public Class HomeForm
     Private conn As SQLiteConnection = MainForm.conn
     Private Sub HomeForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim VendingMachineIDs As New List(Of String)
         Dim Locations As New List(Of String)
         Dim VMStatus As New List(Of Integer)
-        ' Dim InteractBtns() As Button
-        ' Dim LocationBtns() As Button
-        ' InteractBtns = {VM1InteractBtn, VM1InteractBtn, VM3InteractBtn, VM4InteractBtn, VM5InteractBtn, VM6InteractBtn}
-        ' LocationBtns = {VM1Location, VM2Location, VM3Location}
-
         Dim VendingMachines = Me.Controls.OfType(Of GroupBox).ToList()
         VendingMachines = VendingMachines.OrderBy(Function(c) c.Name).ToList() 'Sort by name
 
-
-
-
         conn.Open()
         Dim SqlQuery As String = "SELECT * FROM VENDING_MACHINES;"
-        Dim RowCountQuery As String = "SELECT COUNT(*) FROM VENDING_MACHINES;"
-
-        ' Get number of Vending Machines
-        Dim RCCmd = New SQLiteCommand(RowCountQuery, conn)
-        Dim RowCount = CInt(RCCmd.ExecuteScalar())
-        MessageBox.Show(RowCount)
-
         Dim Cmd As New SQLiteCommand(SqlQuery, conn)
         Dim reader = Cmd.ExecuteReader()
         While reader.Read()
-            ' VendingMachineIDs.Add(reader("VMID"))
             Locations.Add(reader("VMLocation"))
             VMStatus.Add(reader("Status"))
         End While
