@@ -50,4 +50,8 @@ Public Class HomeForm
         Next
     End Sub
 
+    Private Sub InteractBtnVM1_Click(sender As Object, e As EventArgs) Handles InteractBtnVM1.Click
+        Me.Hide()
+        ProductsForm.Show()
+    End Sub
 End Class
