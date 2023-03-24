@@ -54,12 +54,9 @@ CREATE TABLE PURCHASES (
 
 
 -- ===========================================================================
-INSERT INTO PRODUCTS VALUES ('PROD0001', 'Lays (100 gm)', 10);
-INSERT INTO PRODUCTS VALUES ('PROD0002', 'Lays (200 gm)', 20);
-INSERT INTO PRODUCTS VALUES ('PROD0003', 'Frooti (250 ml)', 20);
-INSERT INTO PRODUCTS VALUES ('PROD0004', 'Frooti (500 ml)', 35);
-INSERT INTO PRODUCTS VALUES ('PROD0005', 'Sunfeast Caker', 10);
-INSERT INTO PRODUCTS VALUES ('PROD0006', 'Cadburry Oreo', 15);
+
+
+
 
 
 

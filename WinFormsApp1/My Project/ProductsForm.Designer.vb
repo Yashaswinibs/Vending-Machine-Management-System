@@ -22,112 +22,143 @@ Partial Class ProductsForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Product4 = New VendIT.Product()
-        Me.Product5 = New VendIT.Product()
-        Me.Product6 = New VendIT.Product()
-        Me.Product3 = New VendIT.Product()
-        Me.Product2 = New VendIT.Product()
-        Me.Product1 = New VendIT.Product()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Panel1.SuspendLayout()
-        Me.SuspendLayout()
-        '
-        'Panel1
-        '
-        Me.Panel1.AutoScroll = True
-        Me.Panel1.Controls.Add(Me.Product4)
-        Me.Panel1.Controls.Add(Me.Product5)
-        Me.Panel1.Controls.Add(Me.Product6)
-        Me.Panel1.Controls.Add(Me.Product3)
-        Me.Panel1.Controls.Add(Me.Product2)
-        Me.Panel1.Controls.Add(Me.Product1)
-        Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1348, 673)
-        Me.Panel1.TabIndex = 4
-        '
-        'Product4
-        '
-        Me.Product4.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Product4.Location = New System.Drawing.Point(530, 458)
-        Me.Product4.Name = "Product4"
-        Me.Product4.Size = New System.Drawing.Size(300, 300)
-        Me.Product4.TabIndex = 6
-        '
-        'Product5
-        '
-        Me.Product5.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Product5.Location = New System.Drawing.Point(968, 458)
-        Me.Product5.Name = "Product5"
-        Me.Product5.Size = New System.Drawing.Size(300, 300)
-        Me.Product5.TabIndex = 5
-        '
-        'Product6
-        '
-        Me.Product6.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Product6.Location = New System.Drawing.Point(70, 458)
-        Me.Product6.Name = "Product6"
-        Me.Product6.Size = New System.Drawing.Size(300, 300)
-        Me.Product6.TabIndex = 4
-        '
-        'Product3
-        '
-        Me.Product3.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Product3.Location = New System.Drawing.Point(530, 96)
-        Me.Product3.Name = "Product3"
-        Me.Product3.Size = New System.Drawing.Size(300, 300)
-        Me.Product3.TabIndex = 3
-        '
-        'Product2
-        '
-        Me.Product2.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Product2.Location = New System.Drawing.Point(968, 96)
-        Me.Product2.Name = "Product2"
-        Me.Product2.Size = New System.Drawing.Size(300, 300)
-        Me.Product2.TabIndex = 2
-        '
-        'Product1
-        '
-        Me.Product1.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Product1.Location = New System.Drawing.Point(70, 96)
-        Me.Product1.Name = "Product1"
-        Me.Product1.Size = New System.Drawing.Size(300, 300)
-        Me.Product1.TabIndex = 1
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.Location = New System.Drawing.Point(12, 22)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(250, 38)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "VendIT - Products"
-        '
-        'ProductsForm
-        '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1348, 673)
-        Me.Controls.Add(Me.Panel1)
-        Me.Name = "ProductsForm"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "VendIT - Products"
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
-        Me.ResumeLayout(False)
-
+        Panel1 = New Panel()
+        Label1 = New Label()
+        Product1 = New Product()
+        Product2 = New Product()
+        Product3 = New Product()
+        Product4 = New Product()
+        Product5 = New Product()
+        Product6 = New Product()
+        Product7 = New Product()
+        Product8 = New Product()
+        Product9 = New Product()
+        Panel1.SuspendLayout()
+        SuspendLayout()
+        ' 
+        ' Panel1
+        ' 
+        Panel1.AutoScroll = True
+        Panel1.Controls.Add(Product7)
+        Panel1.Controls.Add(Product8)
+        Panel1.Controls.Add(Product9)
+        Panel1.Controls.Add(Product4)
+        Panel1.Controls.Add(Product5)
+        Panel1.Controls.Add(Product6)
+        Panel1.Controls.Add(Product3)
+        Panel1.Controls.Add(Product2)
+        Panel1.Controls.Add(Product1)
+        Panel1.Controls.Add(Label1)
+        Panel1.Location = New Point(0, 100)
+        Panel1.Name = "Panel1"
+        Panel1.Size = New Size(1348, 573)
+        Panel1.TabIndex = 4
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Font = New Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point)
+        Label1.Location = New Point(12, -63)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(250, 38)
+        Label1.TabIndex = 0
+        Label1.Text = "VendIT - Products"
+        ' 
+        ' Product1
+        ' 
+        Product1.BackColor = SystemColors.ControlLightLight
+        Product1.Location = New Point(33, 33)
+        Product1.Name = "Product1"
+        Product1.Size = New Size(384, 384)
+        Product1.TabIndex = 1
+        ' 
+        ' Product2
+        ' 
+        Product2.BackColor = SystemColors.ControlLightLight
+        Product2.Location = New Point(486, 33)
+        Product2.Name = "Product2"
+        Product2.Size = New Size(384, 384)
+        Product2.TabIndex = 2
+        ' 
+        ' Product3
+        ' 
+        Product3.BackColor = SystemColors.ControlLightLight
+        Product3.Location = New Point(930, 33)
+        Product3.Name = "Product3"
+        Product3.Size = New Size(384, 384)
+        Product3.TabIndex = 3
+        ' 
+        ' Product4
+        ' 
+        Product4.BackColor = SystemColors.ControlLightLight
+        Product4.Location = New Point(930, 476)
+        Product4.Name = "Product4"
+        Product4.Size = New Size(384, 384)
+        Product4.TabIndex = 6
+        ' 
+        ' Product5
+        ' 
+        Product5.BackColor = SystemColors.ControlLightLight
+        Product5.Location = New Point(486, 476)
+        Product5.Name = "Product5"
+        Product5.Size = New Size(384, 384)
+        Product5.TabIndex = 5
+        ' 
+        ' Product6
+        ' 
+        Product6.BackColor = SystemColors.ControlLightLight
+        Product6.Location = New Point(33, 476)
+        Product6.Name = "Product6"
+        Product6.Size = New Size(384, 384)
+        Product6.TabIndex = 4
+        ' 
+        ' Product7
+        ' 
+        Product7.BackColor = SystemColors.ControlLightLight
+        Product7.Location = New Point(930, 920)
+        Product7.Name = "Product7"
+        Product7.Size = New Size(384, 384)
+        Product7.TabIndex = 9
+        ' 
+        ' Product8
+        ' 
+        Product8.BackColor = SystemColors.ControlLightLight
+        Product8.Location = New Point(486, 920)
+        Product8.Name = "Product8"
+        Product8.Size = New Size(384, 384)
+        Product8.TabIndex = 8
+        ' 
+        ' Product9
+        ' 
+        Product9.BackColor = SystemColors.ControlLightLight
+        Product9.Location = New Point(33, 920)
+        Product9.Name = "Product9"
+        Product9.Size = New Size(384, 384)
+        Product9.TabIndex = 7
+        ' 
+        ' ProductsForm
+        ' 
+        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleMode = AutoScaleMode.Font
+        ClientSize = New Size(1348, 673)
+        Controls.Add(Panel1)
+        Name = "ProductsForm"
+        StartPosition = FormStartPosition.CenterScreen
+        Text = "VendIT - Products"
+        Panel1.ResumeLayout(False)
+        Panel1.PerformLayout()
+        ResumeLayout(False)
     End Sub
 
     Friend WithEvents Panel1 As Panel
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Product7 As Product
+    Friend WithEvents Product8 As Product
+    Friend WithEvents Product9 As Product
     Friend WithEvents Product4 As Product
     Friend WithEvents Product5 As Product
     Friend WithEvents Product6 As Product
     Friend WithEvents Product3 As Product
     Friend WithEvents Product2 As Product
     Friend WithEvents Product1 As Product
-    Friend WithEvents Label1 As Label
 End Class

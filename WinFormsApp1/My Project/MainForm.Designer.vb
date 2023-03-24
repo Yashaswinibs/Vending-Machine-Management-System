@@ -22,43 +22,42 @@ Partial Class MainForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.RegisterBtn = New System.Windows.Forms.Button()
-        Me.LoginBtn = New System.Windows.Forms.Button()
-        Me.SuspendLayout()
-        '
-        'RegisterBtn
-        '
-        Me.RegisterBtn.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.RegisterBtn.Location = New System.Drawing.Point(479, 328)
-        Me.RegisterBtn.Name = "RegisterBtn"
-        Me.RegisterBtn.Size = New System.Drawing.Size(128, 64)
-        Me.RegisterBtn.TabIndex = 0
-        Me.RegisterBtn.Text = "Register"
-        Me.RegisterBtn.UseVisualStyleBackColor = True
-        '
-        'LoginBtn
-        '
-        Me.LoginBtn.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.LoginBtn.Location = New System.Drawing.Point(741, 328)
-        Me.LoginBtn.Name = "LoginBtn"
-        Me.LoginBtn.Size = New System.Drawing.Size(128, 64)
-        Me.LoginBtn.TabIndex = 1
-        Me.LoginBtn.Text = "Login"
-        Me.LoginBtn.UseVisualStyleBackColor = True
-        '
-        'MainForm
-        '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1348, 721)
-        Me.Controls.Add(Me.LoginBtn)
-        Me.Controls.Add(Me.RegisterBtn)
-        Me.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Name = "MainForm"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "VendIT - Vending Machine Management System"
-        Me.ResumeLayout(False)
-
+        RegisterBtn = New Button()
+        LoginBtn = New Button()
+        SuspendLayout()
+        ' 
+        ' RegisterBtn
+        ' 
+        RegisterBtn.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        RegisterBtn.Location = New Point(479, 328)
+        RegisterBtn.Name = "RegisterBtn"
+        RegisterBtn.Size = New Size(128, 64)
+        RegisterBtn.TabIndex = 0
+        RegisterBtn.Text = "Register"
+        RegisterBtn.UseVisualStyleBackColor = True
+        ' 
+        ' LoginBtn
+        ' 
+        LoginBtn.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        LoginBtn.Location = New Point(741, 328)
+        LoginBtn.Name = "LoginBtn"
+        LoginBtn.Size = New Size(128, 64)
+        LoginBtn.TabIndex = 1
+        LoginBtn.Text = "Login"
+        LoginBtn.UseVisualStyleBackColor = True
+        ' 
+        ' MainForm
+        ' 
+        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleMode = AutoScaleMode.Font
+        ClientSize = New Size(1348, 721)
+        Controls.Add(LoginBtn)
+        Controls.Add(RegisterBtn)
+        Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        Name = "MainForm"
+        StartPosition = FormStartPosition.CenterScreen
+        Text = "VendIT - Vending Machine Management System"
+        ResumeLayout(False)
     End Sub
 
     Friend WithEvents RegisterBtn As Button
