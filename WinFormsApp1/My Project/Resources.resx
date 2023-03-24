@@ -118,25 +118,25 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="coke_zero" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>assets\coke-zero.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cokeZero" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>assets\cokeZero.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fanta_family_pack" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>assets\fanta-family-pack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fantaFamily" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>assets\fantaFamily.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="kitkat_chocolate" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>assets\kitkat-chocolate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="kitkat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>assets\kitkat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="lays-chips" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>assets\lays-chips.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="laysClassic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>assets\laysClassic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="mirinda_softdrink" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>assets\mirinda-softdrink.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="mirinda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>assets\mirinda.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pringles_chips" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>assets\pringles-chips.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pringles" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>assets\pringles.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="toblerone_chocolate" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>assets\toblerone-chocolate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="toblerone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>assets\toblerone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

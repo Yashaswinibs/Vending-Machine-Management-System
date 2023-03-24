@@ -3,16 +3,17 @@
     Public isAvailable As Boolean = True
     Public Price As Integer
     Public SelectedLblQty As Label
-
-    Private Sub AddQtyBtn_Click(sender As Object, e As EventArgs) Handles AddQtyBtn.Click
+    Public Sub AddQtyBtn_Click(sender As Object, e As EventArgs) Handles AddQtyBtn.Click
         SelectedQty += 1
         UpdateSelectedLblQty()
+        ProductsForm.CartValueLbl.Text = CInt(ProductsForm.CartValueLbl.Text) + Price
     End Sub
 
     Private Sub RemQtyBtn_Click(sender As Object, e As EventArgs) Handles RemQtyBtn.Click
         If SelectedQty > 0 Then
             SelectedQty -= 1
             UpdateSelectedLblQty()
+            ProductsForm.CartValueLbl.Text = CInt(ProductsForm.CartValueLbl.Text) - Price
         End If
     End Sub
 

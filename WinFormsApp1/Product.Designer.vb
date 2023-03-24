@@ -52,7 +52,7 @@ Partial Class Product
         ' 
         SelectedQtyLbl.AutoSize = True
         SelectedQtyLbl.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        SelectedQtyLbl.Location = New Point(361, 281)
+        SelectedQtyLbl.Location = New Point(343, 281)
         SelectedQtyLbl.Name = "SelectedQtyLbl"
         SelectedQtyLbl.Size = New Size(0, 28)
         SelectedQtyLbl.TabIndex = 4

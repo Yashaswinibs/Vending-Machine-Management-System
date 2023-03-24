@@ -63,9 +63,9 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property coke_zero() As System.Drawing.Bitmap
+        Friend ReadOnly Property cokeZero() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("coke_zero", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("cokeZero", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -73,9 +73,9 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property fanta_family_pack() As System.Drawing.Bitmap
+        Friend ReadOnly Property fantaFamily() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("fanta_family_pack", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("fantaFamily", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -83,9 +83,9 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property kitkat_chocolate() As System.Drawing.Bitmap
+        Friend ReadOnly Property kitkat() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("kitkat_chocolate", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("kitkat", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -93,9 +93,9 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property lays_chips() As System.Drawing.Bitmap
+        Friend ReadOnly Property laysClassic() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("lays-chips", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("laysClassic", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -103,9 +103,9 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property mirinda_softdrink() As System.Drawing.Bitmap
+        Friend ReadOnly Property mirinda() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("mirinda_softdrink", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("mirinda", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -113,9 +113,9 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property pringles_chips() As System.Drawing.Bitmap
+        Friend ReadOnly Property pringles() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("pringles_chips", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("pringles", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -123,9 +123,9 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property toblerone_chocolate() As System.Drawing.Bitmap
+        Friend ReadOnly Property toblerone() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("toblerone_chocolate", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("toblerone", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

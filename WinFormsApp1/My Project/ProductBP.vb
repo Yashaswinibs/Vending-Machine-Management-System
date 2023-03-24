@@ -1,8 +1,8 @@
 ﻿Public Class ProductBP
     Public ProdName As String
-    Public Price As Integer
+    Public ProdPrice As Integer
     Public Sub New(Name As String, Price As Integer)
         ProdName = Name
-        Price = Price
+        ProdPrice = Price
     End Sub
 End Class
