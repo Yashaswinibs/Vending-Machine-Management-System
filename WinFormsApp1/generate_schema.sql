@@ -4,15 +4,16 @@ CREATE TABLE USERS (
 	Password	TEXT	NOT NULL,
 	FullName	TEXT	NOT NULL,
 	-- Location	TEXT	NOT NULL,
-	Tokens		INTEGER DEFAULT (0)
-	-- "Role"		TEXT(8) NOT NULL
+	Tokens		INTEGER DEFAULT(0)
+	"Role"		TEXT(8) NOT NULL
 );
 
 
 
 CREATE TABLE VENDING_MACHINES (
 	VMID		TEXT(8)	PRIMARY KEY,
-	VMLocation	Text	NOT NULL
+	VMLocation	Text	NOT NULL,
+	Status		INTEGER	DEFAULT(0)
 );
 
 
@@ -48,3 +49,29 @@ CREATE TABLE PURCHASES (
 	ProductID		TEXT	REFERENCES	PRODUCTS(ProductID),
 	PurchaseTime	Text	DEFAULT(datetime())
 );
+
+
+
+
+-- ===========================================================================
+INSERT INTO PRODUCTS VALUES ('PROD0001', 'Lays (100 gm)', 10);
+INSERT INTO PRODUCTS VALUES ('PROD0002', 'Lays (200 gm)', 20);
+INSERT INTO PRODUCTS VALUES ('PROD0003', 'Frooti (250 ml)', 20);
+INSERT INTO PRODUCTS VALUES ('PROD0004', 'Frooti (500 ml)', 35);
+INSERT INTO PRODUCTS VALUES ('PROD0005', 'Sunfeast Caker', 10);
+INSERT INTO PRODUCTS VALUES ('PROD0006', 'Cadburry Oreo', 15);
+
+
+
+INSERT INTO ADMINS VALUES ('admin', 'admin', 'Administrator', 'Admin');
+INSERT INTO ADMINS VALUES ('shakir', 'shakir035', 'Shakir Ali', 'Admin');
+INSERT INTO ADMINS VALUES ('yash', 'admin', 'Yashaswini BS', 'Admin');
+
+
+
+INSERT INTO VENDING_MACHINES VALUES('VMID0001', 'Cafeteria', 1);
+INSERT INTO VENDING_MACHINES VALUES('VMID0002', 'Admin Block', 1);
+INSERT INTO VENDING_MACHINES VALUES('VMID0003', 'Main Block', 0);
+INSERT INTO VENDING_MACHINES VALUES('VMID0004', 'College Entrance', 1);
+INSERT INTO VENDING_MACHINES VALUES('VMID0005', 'Chavra Square', 0);
+INSERT INTO VENDING_MACHINES VALUES('VMID0006', 'Green Park', 1);

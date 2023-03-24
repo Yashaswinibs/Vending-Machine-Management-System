@@ -14,6 +14,9 @@ Public Class LoginForm
             If reader("Username") = username And reader("password") = password Then
                 MessageBox.Show("Login Successful")
                 ClearInputs()
+                conn.Close() ' Don't forget to close the connection on a successful login :)
+                Me.Hide()
+                HomeForm.Show()
             End If
         Else
             MessageBox.Show("Login Failed")

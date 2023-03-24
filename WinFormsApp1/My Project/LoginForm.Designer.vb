@@ -102,7 +102,7 @@ Partial Class LoginForm
         Me.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Name = "LoginForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "LoginForm"
+        Me.Text = "VendIT - Login"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

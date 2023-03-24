@@ -154,7 +154,7 @@ Partial Class RegisterForm
         Me.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Name = "RegisterForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "RegisterForm"
+        Me.Text = "VendIT - Registration"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

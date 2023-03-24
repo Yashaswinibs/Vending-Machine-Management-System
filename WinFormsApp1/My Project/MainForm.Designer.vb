@@ -56,7 +56,7 @@ Partial Class MainForm
         Me.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Name = "MainForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "VendIT"
+        Me.Text = "VendIT - Vending Machine Management System"
         Me.ResumeLayout(False)
 
     End Sub
