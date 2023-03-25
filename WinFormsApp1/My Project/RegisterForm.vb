@@ -39,6 +39,7 @@ Public Class RegisterForm
 
 
     Private Sub backLink_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles backLink.LinkClicked
+        ClearInputs()
         Me.Hide()
         MainForm.Show()
     End Sub

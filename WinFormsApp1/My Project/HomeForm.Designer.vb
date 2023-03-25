@@ -22,357 +22,367 @@ Partial Class HomeForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.LocationVM1 = New System.Windows.Forms.Button()
-        Me.VM1 = New System.Windows.Forms.GroupBox()
-        Me.VM1ViewPurchasesBtn = New System.Windows.Forms.Button()
-        Me.InteractBtnVM1 = New System.Windows.Forms.Button()
-        Me.VM3 = New System.Windows.Forms.GroupBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.InteractBtnVM3 = New System.Windows.Forms.Button()
-        Me.LocationVM3 = New System.Windows.Forms.Button()
-        Me.VM4 = New System.Windows.Forms.GroupBox()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.InteractBtnVM4 = New System.Windows.Forms.Button()
-        Me.LocationVM4 = New System.Windows.Forms.Button()
-        Me.VM2 = New System.Windows.Forms.GroupBox()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.InteractBtnVM2 = New System.Windows.Forms.Button()
-        Me.LocationVM2 = New System.Windows.Forms.Button()
-        Me.VM5 = New System.Windows.Forms.GroupBox()
-        Me.Button11 = New System.Windows.Forms.Button()
-        Me.InteractBtnVM5 = New System.Windows.Forms.Button()
-        Me.LocationVM5 = New System.Windows.Forms.Button()
-        Me.VM6 = New System.Windows.Forms.GroupBox()
-        Me.Button14 = New System.Windows.Forms.Button()
-        Me.InteractBtnVM6 = New System.Windows.Forms.Button()
-        Me.LocationVM6 = New System.Windows.Forms.Button()
-        Me.GreetingLbl = New System.Windows.Forms.Label()
-        Me.VM1.SuspendLayout()
-        Me.VM3.SuspendLayout()
-        Me.VM4.SuspendLayout()
-        Me.VM2.SuspendLayout()
-        Me.VM5.SuspendLayout()
-        Me.VM6.SuspendLayout()
-        Me.SuspendLayout()
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.Location = New System.Drawing.Point(16, -87)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(304, 54)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Welcome Shakir"
-        '
-        'LocationVM1
-        '
-        Me.LocationVM1.BackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.LocationVM1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.LocationVM1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.LocationVM1.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.LocationVM1.Location = New System.Drawing.Point(28, 42)
-        Me.LocationVM1.Name = "LocationVM1"
-        Me.LocationVM1.Size = New System.Drawing.Size(256, 128)
-        Me.LocationVM1.TabIndex = 2
-        Me.LocationVM1.Text = " "
-        Me.LocationVM1.UseVisualStyleBackColor = False
-        '
-        'VM1
-        '
-        Me.VM1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
-        Me.VM1.Controls.Add(Me.VM1ViewPurchasesBtn)
-        Me.VM1.Controls.Add(Me.InteractBtnVM1)
-        Me.VM1.Controls.Add(Me.LocationVM1)
-        Me.VM1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.VM1.Location = New System.Drawing.Point(104, 86)
-        Me.VM1.Margin = New System.Windows.Forms.Padding(6)
-        Me.VM1.Name = "VM1"
-        Me.VM1.Size = New System.Drawing.Size(320, 300)
-        Me.VM1.TabIndex = 3
-        Me.VM1.TabStop = False
-        Me.VM1.Text = "Vending Machine 1"
-        '
-        'VM1ViewPurchasesBtn
-        '
-        Me.VM1ViewPurchasesBtn.Location = New System.Drawing.Point(28, 246)
-        Me.VM1ViewPurchasesBtn.Name = "VM1ViewPurchasesBtn"
-        Me.VM1ViewPurchasesBtn.Size = New System.Drawing.Size(256, 32)
-        Me.VM1ViewPurchasesBtn.TabIndex = 4
-        Me.VM1ViewPurchasesBtn.Text = "View Purchases"
-        Me.VM1ViewPurchasesBtn.UseVisualStyleBackColor = True
-        '
-        'InteractBtnVM1
-        '
-        Me.InteractBtnVM1.Location = New System.Drawing.Point(28, 199)
-        Me.InteractBtnVM1.Name = "InteractBtnVM1"
-        Me.InteractBtnVM1.Size = New System.Drawing.Size(256, 32)
-        Me.InteractBtnVM1.TabIndex = 3
-        Me.InteractBtnVM1.Text = "Interact"
-        Me.InteractBtnVM1.UseVisualStyleBackColor = True
-        '
-        'VM3
-        '
-        Me.VM3.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
-        Me.VM3.Controls.Add(Me.Button1)
-        Me.VM3.Controls.Add(Me.InteractBtnVM3)
-        Me.VM3.Controls.Add(Me.LocationVM3)
-        Me.VM3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.VM3.Location = New System.Drawing.Point(925, 86)
-        Me.VM3.Margin = New System.Windows.Forms.Padding(6)
-        Me.VM3.Name = "VM3"
-        Me.VM3.Size = New System.Drawing.Size(320, 300)
-        Me.VM3.TabIndex = 5
-        Me.VM3.TabStop = False
-        Me.VM3.Text = "Vending Machine 3"
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(28, 246)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(256, 32)
-        Me.Button1.TabIndex = 4
-        Me.Button1.Text = "View Purchases"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'InteractBtnVM3
-        '
-        Me.InteractBtnVM3.Location = New System.Drawing.Point(28, 199)
-        Me.InteractBtnVM3.Name = "InteractBtnVM3"
-        Me.InteractBtnVM3.Size = New System.Drawing.Size(256, 32)
-        Me.InteractBtnVM3.TabIndex = 3
-        Me.InteractBtnVM3.Text = "Interact"
-        Me.InteractBtnVM3.UseVisualStyleBackColor = True
-        '
-        'LocationVM3
-        '
-        Me.LocationVM3.BackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.LocationVM3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.LocationVM3.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.LocationVM3.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.LocationVM3.Location = New System.Drawing.Point(28, 42)
-        Me.LocationVM3.Name = "LocationVM3"
-        Me.LocationVM3.Size = New System.Drawing.Size(256, 128)
-        Me.LocationVM3.TabIndex = 2
-        Me.LocationVM3.Text = " " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        Me.LocationVM3.UseVisualStyleBackColor = False
-        '
-        'VM4
-        '
-        Me.VM4.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
-        Me.VM4.Controls.Add(Me.Button5)
-        Me.VM4.Controls.Add(Me.InteractBtnVM4)
-        Me.VM4.Controls.Add(Me.LocationVM4)
-        Me.VM4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.VM4.Location = New System.Drawing.Point(104, 409)
-        Me.VM4.Name = "VM4"
-        Me.VM4.Size = New System.Drawing.Size(320, 300)
-        Me.VM4.TabIndex = 5
-        Me.VM4.TabStop = False
-        Me.VM4.Text = "Vending Machine 4"
-        '
-        'Button5
-        '
-        Me.Button5.Location = New System.Drawing.Point(28, 246)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(256, 32)
-        Me.Button5.TabIndex = 4
-        Me.Button5.Text = "View Purchases"
-        Me.Button5.UseVisualStyleBackColor = True
-        '
-        'InteractBtnVM4
-        '
-        Me.InteractBtnVM4.Location = New System.Drawing.Point(28, 199)
-        Me.InteractBtnVM4.Name = "InteractBtnVM4"
-        Me.InteractBtnVM4.Size = New System.Drawing.Size(256, 32)
-        Me.InteractBtnVM4.TabIndex = 3
-        Me.InteractBtnVM4.Text = "Interact"
-        Me.InteractBtnVM4.UseVisualStyleBackColor = True
-        '
-        'LocationVM4
-        '
-        Me.LocationVM4.BackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.LocationVM4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.LocationVM4.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.LocationVM4.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.LocationVM4.Location = New System.Drawing.Point(28, 42)
-        Me.LocationVM4.Name = "LocationVM4"
-        Me.LocationVM4.Size = New System.Drawing.Size(256, 128)
-        Me.LocationVM4.TabIndex = 2
-        Me.LocationVM4.Text = " "
-        Me.LocationVM4.UseVisualStyleBackColor = False
-        '
-        'VM2
-        '
-        Me.VM2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
-        Me.VM2.Controls.Add(Me.Button8)
-        Me.VM2.Controls.Add(Me.InteractBtnVM2)
-        Me.VM2.Controls.Add(Me.LocationVM2)
-        Me.VM2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.VM2.Location = New System.Drawing.Point(522, 86)
-        Me.VM2.Margin = New System.Windows.Forms.Padding(6)
-        Me.VM2.Name = "VM2"
-        Me.VM2.Size = New System.Drawing.Size(320, 300)
-        Me.VM2.TabIndex = 5
-        Me.VM2.TabStop = False
-        Me.VM2.Text = "Vending Machine 2"
-        '
-        'Button8
-        '
-        Me.Button8.Location = New System.Drawing.Point(28, 246)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(256, 32)
-        Me.Button8.TabIndex = 4
-        Me.Button8.Text = "View Purchases"
-        Me.Button8.UseVisualStyleBackColor = True
-        '
-        'InteractBtnVM2
-        '
-        Me.InteractBtnVM2.Location = New System.Drawing.Point(28, 199)
-        Me.InteractBtnVM2.Name = "InteractBtnVM2"
-        Me.InteractBtnVM2.Size = New System.Drawing.Size(256, 32)
-        Me.InteractBtnVM2.TabIndex = 3
-        Me.InteractBtnVM2.Text = "Interact"
-        Me.InteractBtnVM2.UseVisualStyleBackColor = True
-        '
-        'LocationVM2
-        '
-        Me.LocationVM2.BackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.LocationVM2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.LocationVM2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.LocationVM2.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.LocationVM2.Location = New System.Drawing.Point(28, 42)
-        Me.LocationVM2.Name = "LocationVM2"
-        Me.LocationVM2.Size = New System.Drawing.Size(256, 128)
-        Me.LocationVM2.TabIndex = 2
-        Me.LocationVM2.UseVisualStyleBackColor = False
-        '
-        'VM5
-        '
-        Me.VM5.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
-        Me.VM5.Controls.Add(Me.Button11)
-        Me.VM5.Controls.Add(Me.InteractBtnVM5)
-        Me.VM5.Controls.Add(Me.LocationVM5)
-        Me.VM5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.VM5.Location = New System.Drawing.Point(522, 409)
-        Me.VM5.Name = "VM5"
-        Me.VM5.Size = New System.Drawing.Size(320, 300)
-        Me.VM5.TabIndex = 6
-        Me.VM5.TabStop = False
-        Me.VM5.Text = "Vending Machine 5"
-        '
-        'Button11
-        '
-        Me.Button11.Location = New System.Drawing.Point(28, 246)
-        Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(256, 32)
-        Me.Button11.TabIndex = 4
-        Me.Button11.Text = "View Purchases"
-        Me.Button11.UseVisualStyleBackColor = True
-        '
-        'InteractBtnVM5
-        '
-        Me.InteractBtnVM5.Location = New System.Drawing.Point(28, 199)
-        Me.InteractBtnVM5.Name = "InteractBtnVM5"
-        Me.InteractBtnVM5.Size = New System.Drawing.Size(256, 32)
-        Me.InteractBtnVM5.TabIndex = 3
-        Me.InteractBtnVM5.Text = "Interact"
-        Me.InteractBtnVM5.UseVisualStyleBackColor = True
-        '
-        'LocationVM5
-        '
-        Me.LocationVM5.BackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.LocationVM5.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.LocationVM5.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.LocationVM5.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.LocationVM5.Location = New System.Drawing.Point(28, 42)
-        Me.LocationVM5.Name = "LocationVM5"
-        Me.LocationVM5.Size = New System.Drawing.Size(256, 128)
-        Me.LocationVM5.TabIndex = 2
-        Me.LocationVM5.Text = " " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        Me.LocationVM5.UseVisualStyleBackColor = False
-        '
-        'VM6
-        '
-        Me.VM6.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
-        Me.VM6.Controls.Add(Me.Button14)
-        Me.VM6.Controls.Add(Me.InteractBtnVM6)
-        Me.VM6.Controls.Add(Me.LocationVM6)
-        Me.VM6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.VM6.Location = New System.Drawing.Point(925, 409)
-        Me.VM6.Name = "VM6"
-        Me.VM6.Size = New System.Drawing.Size(320, 300)
-        Me.VM6.TabIndex = 7
-        Me.VM6.TabStop = False
-        Me.VM6.Text = "Vending Machine 6"
-        '
-        'Button14
-        '
-        Me.Button14.Location = New System.Drawing.Point(28, 246)
-        Me.Button14.Name = "Button14"
-        Me.Button14.Size = New System.Drawing.Size(256, 32)
-        Me.Button14.TabIndex = 4
-        Me.Button14.Text = "View Purchases"
-        Me.Button14.UseVisualStyleBackColor = True
-        '
-        'InteractBtnVM6
-        '
-        Me.InteractBtnVM6.Location = New System.Drawing.Point(28, 199)
-        Me.InteractBtnVM6.Name = "InteractBtnVM6"
-        Me.InteractBtnVM6.Size = New System.Drawing.Size(256, 32)
-        Me.InteractBtnVM6.TabIndex = 3
-        Me.InteractBtnVM6.Text = "Interact"
-        Me.InteractBtnVM6.UseVisualStyleBackColor = True
-        '
-        'LocationVM6
-        '
-        Me.LocationVM6.BackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.LocationVM6.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.LocationVM6.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.LocationVM6.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.LocationVM6.Location = New System.Drawing.Point(28, 42)
-        Me.LocationVM6.Name = "LocationVM6"
-        Me.LocationVM6.Size = New System.Drawing.Size(256, 128)
-        Me.LocationVM6.TabIndex = 2
-        Me.LocationVM6.Text = " " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        Me.LocationVM6.UseVisualStyleBackColor = False
-        '
-        'GreetingLbl
-        '
-        Me.GreetingLbl.AutoSize = True
-        Me.GreetingLbl.Font = New System.Drawing.Font("Segoe UI Black", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.GreetingLbl.Location = New System.Drawing.Point(24, 20)
-        Me.GreetingLbl.Name = "GreetingLbl"
-        Me.GreetingLbl.Size = New System.Drawing.Size(250, 38)
-        Me.GreetingLbl.TabIndex = 5
-        Me.GreetingLbl.Text = "Welcome, Shakir"
-        '
-        'HomeForm
-        '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.AutoScroll = True
-        Me.ClientSize = New System.Drawing.Size(1348, 721)
-        Me.Controls.Add(Me.GreetingLbl)
-        Me.Controls.Add(Me.VM6)
-        Me.Controls.Add(Me.VM5)
-        Me.Controls.Add(Me.VM3)
-        Me.Controls.Add(Me.VM4)
-        Me.Controls.Add(Me.VM2)
-        Me.Controls.Add(Me.VM1)
-        Me.Controls.Add(Me.Label1)
-        Me.Name = "HomeForm"
-        Me.Text = "VendIT - Home"
-        Me.VM1.ResumeLayout(False)
-        Me.VM3.ResumeLayout(False)
-        Me.VM4.ResumeLayout(False)
-        Me.VM2.ResumeLayout(False)
-        Me.VM5.ResumeLayout(False)
-        Me.VM6.ResumeLayout(False)
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
-
+        Label1 = New Label()
+        LocationVM1 = New Button()
+        VM1 = New GroupBox()
+        VM1ViewPurchasesBtn = New Button()
+        InteractBtnVM1 = New Button()
+        VM3 = New GroupBox()
+        Button1 = New Button()
+        InteractBtnVM3 = New Button()
+        LocationVM3 = New Button()
+        VM4 = New GroupBox()
+        Button5 = New Button()
+        InteractBtnVM4 = New Button()
+        LocationVM4 = New Button()
+        VM2 = New GroupBox()
+        Button8 = New Button()
+        InteractBtnVM2 = New Button()
+        LocationVM2 = New Button()
+        VM5 = New GroupBox()
+        Button11 = New Button()
+        InteractBtnVM5 = New Button()
+        LocationVM5 = New Button()
+        VM6 = New GroupBox()
+        Button14 = New Button()
+        InteractBtnVM6 = New Button()
+        LocationVM6 = New Button()
+        GreetingLbl = New Label()
+        LogOutBtn = New Button()
+        VM1.SuspendLayout()
+        VM3.SuspendLayout()
+        VM4.SuspendLayout()
+        VM2.SuspendLayout()
+        VM5.SuspendLayout()
+        VM6.SuspendLayout()
+        SuspendLayout()
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Font = New Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point)
+        Label1.Location = New Point(16, -87)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(304, 54)
+        Label1.TabIndex = 0
+        Label1.Text = "Welcome Shakir"
+        ' 
+        ' LocationVM1
+        ' 
+        LocationVM1.BackColor = SystemColors.MenuHighlight
+        LocationVM1.FlatStyle = FlatStyle.Popup
+        LocationVM1.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        LocationVM1.ForeColor = SystemColors.ButtonFace
+        LocationVM1.Location = New Point(28, 42)
+        LocationVM1.Name = "LocationVM1"
+        LocationVM1.Size = New Size(256, 128)
+        LocationVM1.TabIndex = 2
+        LocationVM1.Text = " "
+        LocationVM1.UseVisualStyleBackColor = False
+        ' 
+        ' VM1
+        ' 
+        VM1.BackColor = SystemColors.GradientInactiveCaption
+        VM1.Controls.Add(VM1ViewPurchasesBtn)
+        VM1.Controls.Add(InteractBtnVM1)
+        VM1.Controls.Add(LocationVM1)
+        VM1.ForeColor = SystemColors.ActiveCaptionText
+        VM1.Location = New Point(104, 86)
+        VM1.Margin = New Padding(6)
+        VM1.Name = "VM1"
+        VM1.Size = New Size(320, 300)
+        VM1.TabIndex = 3
+        VM1.TabStop = False
+        VM1.Text = "Vending Machine 1"
+        ' 
+        ' VM1ViewPurchasesBtn
+        ' 
+        VM1ViewPurchasesBtn.Location = New Point(28, 246)
+        VM1ViewPurchasesBtn.Name = "VM1ViewPurchasesBtn"
+        VM1ViewPurchasesBtn.Size = New Size(256, 32)
+        VM1ViewPurchasesBtn.TabIndex = 4
+        VM1ViewPurchasesBtn.Text = "View Purchases"
+        VM1ViewPurchasesBtn.UseVisualStyleBackColor = True
+        ' 
+        ' InteractBtnVM1
+        ' 
+        InteractBtnVM1.Location = New Point(28, 199)
+        InteractBtnVM1.Name = "InteractBtnVM1"
+        InteractBtnVM1.Size = New Size(256, 32)
+        InteractBtnVM1.TabIndex = 3
+        InteractBtnVM1.Text = "Interact"
+        InteractBtnVM1.UseVisualStyleBackColor = True
+        ' 
+        ' VM3
+        ' 
+        VM3.BackColor = SystemColors.GradientInactiveCaption
+        VM3.Controls.Add(Button1)
+        VM3.Controls.Add(InteractBtnVM3)
+        VM3.Controls.Add(LocationVM3)
+        VM3.ForeColor = SystemColors.ActiveCaptionText
+        VM3.Location = New Point(925, 86)
+        VM3.Margin = New Padding(6)
+        VM3.Name = "VM3"
+        VM3.Size = New Size(320, 300)
+        VM3.TabIndex = 5
+        VM3.TabStop = False
+        VM3.Text = "Vending Machine 3"
+        ' 
+        ' Button1
+        ' 
+        Button1.Location = New Point(28, 246)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(256, 32)
+        Button1.TabIndex = 4
+        Button1.Text = "View Purchases"
+        Button1.UseVisualStyleBackColor = True
+        ' 
+        ' InteractBtnVM3
+        ' 
+        InteractBtnVM3.Location = New Point(28, 199)
+        InteractBtnVM3.Name = "InteractBtnVM3"
+        InteractBtnVM3.Size = New Size(256, 32)
+        InteractBtnVM3.TabIndex = 3
+        InteractBtnVM3.Text = "Interact"
+        InteractBtnVM3.UseVisualStyleBackColor = True
+        ' 
+        ' LocationVM3
+        ' 
+        LocationVM3.BackColor = SystemColors.MenuHighlight
+        LocationVM3.FlatStyle = FlatStyle.Popup
+        LocationVM3.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        LocationVM3.ForeColor = SystemColors.ButtonFace
+        LocationVM3.Location = New Point(28, 42)
+        LocationVM3.Name = "LocationVM3"
+        LocationVM3.Size = New Size(256, 128)
+        LocationVM3.TabIndex = 2
+        LocationVM3.Text = " " & vbCrLf
+        LocationVM3.UseVisualStyleBackColor = False
+        ' 
+        ' VM4
+        ' 
+        VM4.BackColor = SystemColors.GradientInactiveCaption
+        VM4.Controls.Add(Button5)
+        VM4.Controls.Add(InteractBtnVM4)
+        VM4.Controls.Add(LocationVM4)
+        VM4.ForeColor = SystemColors.ActiveCaptionText
+        VM4.Location = New Point(104, 409)
+        VM4.Name = "VM4"
+        VM4.Size = New Size(320, 300)
+        VM4.TabIndex = 5
+        VM4.TabStop = False
+        VM4.Text = "Vending Machine 4"
+        ' 
+        ' Button5
+        ' 
+        Button5.Location = New Point(28, 246)
+        Button5.Name = "Button5"
+        Button5.Size = New Size(256, 32)
+        Button5.TabIndex = 4
+        Button5.Text = "View Purchases"
+        Button5.UseVisualStyleBackColor = True
+        ' 
+        ' InteractBtnVM4
+        ' 
+        InteractBtnVM4.Location = New Point(28, 199)
+        InteractBtnVM4.Name = "InteractBtnVM4"
+        InteractBtnVM4.Size = New Size(256, 32)
+        InteractBtnVM4.TabIndex = 3
+        InteractBtnVM4.Text = "Interact"
+        InteractBtnVM4.UseVisualStyleBackColor = True
+        ' 
+        ' LocationVM4
+        ' 
+        LocationVM4.BackColor = SystemColors.MenuHighlight
+        LocationVM4.FlatStyle = FlatStyle.Popup
+        LocationVM4.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        LocationVM4.ForeColor = SystemColors.ButtonFace
+        LocationVM4.Location = New Point(28, 42)
+        LocationVM4.Name = "LocationVM4"
+        LocationVM4.Size = New Size(256, 128)
+        LocationVM4.TabIndex = 2
+        LocationVM4.Text = " "
+        LocationVM4.UseVisualStyleBackColor = False
+        ' 
+        ' VM2
+        ' 
+        VM2.BackColor = SystemColors.GradientInactiveCaption
+        VM2.Controls.Add(Button8)
+        VM2.Controls.Add(InteractBtnVM2)
+        VM2.Controls.Add(LocationVM2)
+        VM2.ForeColor = SystemColors.ActiveCaptionText
+        VM2.Location = New Point(522, 86)
+        VM2.Margin = New Padding(6)
+        VM2.Name = "VM2"
+        VM2.Size = New Size(320, 300)
+        VM2.TabIndex = 5
+        VM2.TabStop = False
+        VM2.Text = "Vending Machine 2"
+        ' 
+        ' Button8
+        ' 
+        Button8.Location = New Point(28, 246)
+        Button8.Name = "Button8"
+        Button8.Size = New Size(256, 32)
+        Button8.TabIndex = 4
+        Button8.Text = "View Purchases"
+        Button8.UseVisualStyleBackColor = True
+        ' 
+        ' InteractBtnVM2
+        ' 
+        InteractBtnVM2.Location = New Point(28, 199)
+        InteractBtnVM2.Name = "InteractBtnVM2"
+        InteractBtnVM2.Size = New Size(256, 32)
+        InteractBtnVM2.TabIndex = 3
+        InteractBtnVM2.Text = "Interact"
+        InteractBtnVM2.UseVisualStyleBackColor = True
+        ' 
+        ' LocationVM2
+        ' 
+        LocationVM2.BackColor = SystemColors.MenuHighlight
+        LocationVM2.FlatStyle = FlatStyle.Popup
+        LocationVM2.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        LocationVM2.ForeColor = SystemColors.ButtonFace
+        LocationVM2.Location = New Point(28, 42)
+        LocationVM2.Name = "LocationVM2"
+        LocationVM2.Size = New Size(256, 128)
+        LocationVM2.TabIndex = 2
+        LocationVM2.UseVisualStyleBackColor = False
+        ' 
+        ' VM5
+        ' 
+        VM5.BackColor = SystemColors.GradientInactiveCaption
+        VM5.Controls.Add(Button11)
+        VM5.Controls.Add(InteractBtnVM5)
+        VM5.Controls.Add(LocationVM5)
+        VM5.ForeColor = SystemColors.ActiveCaptionText
+        VM5.Location = New Point(522, 409)
+        VM5.Name = "VM5"
+        VM5.Size = New Size(320, 300)
+        VM5.TabIndex = 6
+        VM5.TabStop = False
+        VM5.Text = "Vending Machine 5"
+        ' 
+        ' Button11
+        ' 
+        Button11.Location = New Point(28, 246)
+        Button11.Name = "Button11"
+        Button11.Size = New Size(256, 32)
+        Button11.TabIndex = 4
+        Button11.Text = "View Purchases"
+        Button11.UseVisualStyleBackColor = True
+        ' 
+        ' InteractBtnVM5
+        ' 
+        InteractBtnVM5.Location = New Point(28, 199)
+        InteractBtnVM5.Name = "InteractBtnVM5"
+        InteractBtnVM5.Size = New Size(256, 32)
+        InteractBtnVM5.TabIndex = 3
+        InteractBtnVM5.Text = "Interact"
+        InteractBtnVM5.UseVisualStyleBackColor = True
+        ' 
+        ' LocationVM5
+        ' 
+        LocationVM5.BackColor = SystemColors.MenuHighlight
+        LocationVM5.FlatStyle = FlatStyle.Popup
+        LocationVM5.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        LocationVM5.ForeColor = SystemColors.ButtonFace
+        LocationVM5.Location = New Point(28, 42)
+        LocationVM5.Name = "LocationVM5"
+        LocationVM5.Size = New Size(256, 128)
+        LocationVM5.TabIndex = 2
+        LocationVM5.Text = " " & vbCrLf
+        LocationVM5.UseVisualStyleBackColor = False
+        ' 
+        ' VM6
+        ' 
+        VM6.BackColor = SystemColors.GradientInactiveCaption
+        VM6.Controls.Add(Button14)
+        VM6.Controls.Add(InteractBtnVM6)
+        VM6.Controls.Add(LocationVM6)
+        VM6.ForeColor = SystemColors.ActiveCaptionText
+        VM6.Location = New Point(925, 409)
+        VM6.Name = "VM6"
+        VM6.Size = New Size(320, 300)
+        VM6.TabIndex = 7
+        VM6.TabStop = False
+        VM6.Text = "Vending Machine 6"
+        ' 
+        ' Button14
+        ' 
+        Button14.Location = New Point(28, 246)
+        Button14.Name = "Button14"
+        Button14.Size = New Size(256, 32)
+        Button14.TabIndex = 4
+        Button14.Text = "View Purchases"
+        Button14.UseVisualStyleBackColor = True
+        ' 
+        ' InteractBtnVM6
+        ' 
+        InteractBtnVM6.Location = New Point(28, 199)
+        InteractBtnVM6.Name = "InteractBtnVM6"
+        InteractBtnVM6.Size = New Size(256, 32)
+        InteractBtnVM6.TabIndex = 3
+        InteractBtnVM6.Text = "Interact"
+        InteractBtnVM6.UseVisualStyleBackColor = True
+        ' 
+        ' LocationVM6
+        ' 
+        LocationVM6.BackColor = SystemColors.MenuHighlight
+        LocationVM6.FlatStyle = FlatStyle.Popup
+        LocationVM6.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        LocationVM6.ForeColor = SystemColors.ButtonFace
+        LocationVM6.Location = New Point(28, 42)
+        LocationVM6.Name = "LocationVM6"
+        LocationVM6.Size = New Size(256, 128)
+        LocationVM6.TabIndex = 2
+        LocationVM6.Text = " " & vbCrLf
+        LocationVM6.UseVisualStyleBackColor = False
+        ' 
+        ' GreetingLbl
+        ' 
+        GreetingLbl.AutoSize = True
+        GreetingLbl.Font = New Font("Segoe UI Black", 16.2F, FontStyle.Bold, GraphicsUnit.Point)
+        GreetingLbl.Location = New Point(24, 20)
+        GreetingLbl.Name = "GreetingLbl"
+        GreetingLbl.Size = New Size(250, 38)
+        GreetingLbl.TabIndex = 5
+        GreetingLbl.Text = "Welcome, Shakir"
+        ' 
+        ' LogOutBtn
+        ' 
+        LogOutBtn.Location = New Point(1214, 20)
+        LogOutBtn.Name = "LogOutBtn"
+        LogOutBtn.Size = New Size(100, 32)
+        LogOutBtn.TabIndex = 8
+        LogOutBtn.Text = "Log Out"
+        LogOutBtn.UseVisualStyleBackColor = True
+        ' 
+        ' HomeForm
+        ' 
+        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleMode = AutoScaleMode.Font
+        AutoScroll = True
+        ClientSize = New Size(1348, 721)
+        Controls.Add(LogOutBtn)
+        Controls.Add(GreetingLbl)
+        Controls.Add(VM6)
+        Controls.Add(VM5)
+        Controls.Add(VM3)
+        Controls.Add(VM4)
+        Controls.Add(VM2)
+        Controls.Add(VM1)
+        Controls.Add(Label1)
+        Name = "HomeForm"
+        Text = "VendIT - Home"
+        VM1.ResumeLayout(False)
+        VM3.ResumeLayout(False)
+        VM4.ResumeLayout(False)
+        VM2.ResumeLayout(False)
+        VM5.ResumeLayout(False)
+        VM6.ResumeLayout(False)
+        ResumeLayout(False)
+        PerformLayout()
     End Sub
 
     Friend WithEvents Label1 As Label
@@ -401,4 +411,5 @@ Partial Class HomeForm
     Friend WithEvents InteractBtnVM6 As Button
     Friend WithEvents LocationVM6 As Button
     Friend WithEvents GreetingLbl As Label
+    Friend WithEvents LogOutBtn As Button
 End Class

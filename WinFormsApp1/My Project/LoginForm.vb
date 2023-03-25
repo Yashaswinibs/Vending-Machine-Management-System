@@ -2,6 +2,7 @@
 
 Public Class LoginForm
     Private conn As SQLiteConnection = MainForm.conn
+    Public loginInfo As New LoginInfo
     Private Sub LoginBtn_Click(sender As Object, e As EventArgs) Handles LoginBtn.Click
         Dim username = UsernameTB.Text
         Dim password = PasswordTB.Text
@@ -14,6 +15,9 @@ Public Class LoginForm
             If reader("Username") = username And reader("password") = password Then
                 MessageBox.Show("Login Successful")
                 ClearInputs()
+                loginInfo.Username = reader("Username")
+                loginInfo.Fullname = reader("FullName")
+                loginInfo.Tokens = CInt(reader("Tokens"))
                 conn.Close() ' Don't forget to close the connection on a successful login :)
                 Me.Hide()
                 HomeForm.Show()
@@ -32,7 +36,18 @@ Public Class LoginForm
     End Sub
 
     Private Sub backLink_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles backLink.LinkClicked
+        ClearInputs()
         Me.Hide()
         MainForm.Show()
     End Sub
+End Class
+
+
+
+
+
+Public Class LoginInfo
+    Public Username As String
+    Public Fullname As String
+    Public Tokens As Integer
 End Class

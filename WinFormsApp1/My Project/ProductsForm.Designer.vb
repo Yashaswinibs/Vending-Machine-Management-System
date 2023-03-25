@@ -32,10 +32,12 @@ Partial Class ProductsForm
         Product7 = New Product()
         Product8 = New Product()
         Product9 = New Product()
-        Label1 = New Label()
         label99 = New Label()
         CartValueLbl = New Label()
         Label2 = New Label()
+        Label1 = New Label()
+        AvlTokensLbl = New Label()
+        Label4 = New Label()
         FlowLayoutPanel1.SuspendLayout()
         SuspendLayout()
         ' 
@@ -138,31 +140,21 @@ Partial Class ProductsForm
         Product9.Size = New Size(384, 384)
         Product9.TabIndex = 8
         ' 
-        ' Label1
-        ' 
-        Label1.AutoSize = True
-        Label1.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label1.Location = New Point(12, 9)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(203, 28)
-        Label1.TabIndex = 1
-        Label1.Text = "VendIT - Buy Products"
-        ' 
         ' label99
         ' 
         label99.AutoSize = True
-        label99.Font = New Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point)
-        label99.Location = New Point(12, 60)
+        label99.Font = New Font("Segoe UI Semibold", 16.2F, FontStyle.Bold, GraphicsUnit.Point)
+        label99.Location = New Point(12, 55)
         label99.Name = "label99"
-        label99.Size = New Size(152, 38)
+        label99.Size = New Size(147, 38)
         label99.TabIndex = 2
         label99.Text = "Cart Value"
         ' 
         ' CartValueLbl
         ' 
         CartValueLbl.AutoSize = True
-        CartValueLbl.Font = New Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point)
-        CartValueLbl.Location = New Point(253, 60)
+        CartValueLbl.Font = New Font("Segoe UI Semibold", 16.2F, FontStyle.Bold, GraphicsUnit.Point)
+        CartValueLbl.Location = New Point(301, 55)
         CartValueLbl.Name = "CartValueLbl"
         CartValueLbl.Size = New Size(33, 38)
         CartValueLbl.TabIndex = 3
@@ -171,26 +163,58 @@ Partial Class ProductsForm
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Font = New Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point)
-        Label2.Location = New Point(228, 60)
+        Label2.Font = New Font("Segoe UI Semibold", 16.2F, FontStyle.Bold, GraphicsUnit.Point)
+        Label2.Location = New Point(276, 55)
         Label2.Name = "Label2"
         Label2.Size = New Size(33, 38)
         Label2.TabIndex = 4
         Label2.Text = "₹"
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Font = New Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point)
+        Label1.Location = New Point(276, 9)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(33, 38)
+        Label1.TabIndex = 7
+        Label1.Text = "₹"
+        ' 
+        ' AvlTokensLbl
+        ' 
+        AvlTokensLbl.AutoSize = True
+        AvlTokensLbl.Font = New Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point)
+        AvlTokensLbl.Location = New Point(301, 9)
+        AvlTokensLbl.Name = "AvlTokensLbl"
+        AvlTokensLbl.Size = New Size(33, 38)
+        AvlTokensLbl.TabIndex = 6
+        AvlTokensLbl.Text = "0"
+        ' 
+        ' Label4
+        ' 
+        Label4.AutoSize = True
+        Label4.Font = New Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point)
+        Label4.Location = New Point(12, 9)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(235, 38)
+        Label4.TabIndex = 5
+        Label4.Text = "Available Tokens"
         ' 
         ' ProductsForm
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1348, 673)
+        Controls.Add(Label1)
+        Controls.Add(AvlTokensLbl)
+        Controls.Add(Label4)
         Controls.Add(Label2)
         Controls.Add(CartValueLbl)
         Controls.Add(label99)
-        Controls.Add(Label1)
         Controls.Add(FlowLayoutPanel1)
         Name = "ProductsForm"
         StartPosition = FormStartPosition.CenterScreen
-        Text = "VendIT - Products"
+        Text = "VendIT - Buy Products"
         FlowLayoutPanel1.ResumeLayout(False)
         ResumeLayout(False)
         PerformLayout()
@@ -206,8 +230,10 @@ Partial Class ProductsForm
     Friend WithEvents Product7 As Product
     Friend WithEvents Product8 As Product
     Friend WithEvents Product9 As Product
-    Friend WithEvents Label1 As Label
     Friend WithEvents label99 As Label
     Friend WithEvents CartValueLbl As Label
     Friend WithEvents Label2 As Label
+    Friend WithEvents Label1 As Label
+    Friend WithEvents AvlTokensLbl As Label
+    Friend WithEvents Label4 As Label
 End Class

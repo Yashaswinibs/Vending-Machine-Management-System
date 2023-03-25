@@ -6,6 +6,8 @@ Public Class ProductsForm
     Dim Products As New List(Of Product) ' Products in the form
 
     Private Sub ProductsForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        AvlTokensLbl.Text = LoginForm.loginInfo.Tokens
+
         Products.Add(Product1)
         Products.Add(Product2)
         Products.Add(Product3)
@@ -21,7 +23,6 @@ Public Class ProductsForm
         Dim Cmd As New SQLiteCommand(SqlQuery, conn)
         Dim reader = Cmd.ExecuteReader()
         While reader.Read()
-
             DBProducts.Add(New ProductBP(reader("ProductName"), CInt(reader("ProductPrice"))))
         End While
         conn.Close()

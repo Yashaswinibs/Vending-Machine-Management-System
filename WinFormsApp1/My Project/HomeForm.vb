@@ -54,4 +54,13 @@ Public Class HomeForm
         Me.Hide()
         ProductsForm.Show()
     End Sub
+
+    Private Sub LogOutBtn_Click(sender As Object, e As EventArgs) Handles LogOutBtn.Click
+        LoginForm.loginInfo.Username = ""
+        LoginForm.loginInfo.Fullname = ""
+        LoginForm.loginInfo.Tokens = 0
+        MessageBox.Show("Logging Out")
+        Me.Hide()
+        LoginForm.Show()
+    End Sub
 End Class

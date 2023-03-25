@@ -30,6 +30,5 @@
         If Not isAvailable Then
             prodLbl.Text = "Out Of Stock"
         End If
-
     End Sub
 End Class
