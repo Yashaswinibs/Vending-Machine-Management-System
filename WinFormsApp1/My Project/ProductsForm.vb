@@ -4,6 +4,7 @@ Public Class ProductsForm
     Private conn As SQLiteConnection = MainForm.conn
     Public DBProducts As New List(Of ProductBP) ' Products in the database
     Dim Products As New List(Of Product) ' Products in the form
+    Public Cart As New List(Of ProductBP)
 
     Private Sub ProductsForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         AvlTokensLbl.Text = LoginForm.loginInfo.Tokens
@@ -39,5 +40,14 @@ Public Class ProductsForm
             Products(i).prodLbl.Text = DBProducts(i).ProdName
             Products(i).Price = DBProducts(i).ProdPrice
         Next
+    End Sub
+
+    Private Sub CheckoutBtn_Click(sender As Object, e As EventArgs) Handles CheckoutBtn.Click
+        If LoginForm.loginInfo.Tokens < CInt(CartValueLbl.Text) Then
+            MessageBox.Show("You Don't Have Enough Tokens To Complete This Purchase")
+        Else
+            Me.Hide()
+            OrderSummaryForm.Show()
+        End If
     End Sub
 End Class

@@ -7,6 +7,7 @@
         SelectedQty += 1
         UpdateSelectedLblQty()
         ProductsForm.CartValueLbl.Text = CInt(ProductsForm.CartValueLbl.Text) + Price
+        ProductsForm.Cart.Add(New ProductBP(prodLbl.Text, Price))
     End Sub
 
     Private Sub RemQtyBtn_Click(sender As Object, e As EventArgs) Handles RemQtyBtn.Click
@@ -14,6 +15,7 @@
             SelectedQty -= 1
             UpdateSelectedLblQty()
             ProductsForm.CartValueLbl.Text = CInt(ProductsForm.CartValueLbl.Text) - Price
+            ProductsForm.Cart.Remove(New ProductBP(prodLbl.Text, Price))
         End If
     End Sub
 

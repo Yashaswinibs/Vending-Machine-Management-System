@@ -38,6 +38,7 @@ Partial Class ProductsForm
         Label1 = New Label()
         AvlTokensLbl = New Label()
         Label4 = New Label()
+        CheckoutBtn = New Button()
         FlowLayoutPanel1.SuspendLayout()
         SuspendLayout()
         ' 
@@ -53,10 +54,10 @@ Partial Class ProductsForm
         FlowLayoutPanel1.Controls.Add(Product7)
         FlowLayoutPanel1.Controls.Add(Product8)
         FlowLayoutPanel1.Controls.Add(Product9)
-        FlowLayoutPanel1.Location = New Point(12, 119)
+        FlowLayoutPanel1.Location = New Point(42, 119)
         FlowLayoutPanel1.Margin = New Padding(1)
         FlowLayoutPanel1.Name = "FlowLayoutPanel1"
-        FlowLayoutPanel1.Size = New Size(1324, 562)
+        FlowLayoutPanel1.Size = New Size(1264, 562)
         FlowLayoutPanel1.TabIndex = 0
         ' 
         ' Product1
@@ -200,11 +201,21 @@ Partial Class ProductsForm
         Label4.TabIndex = 5
         Label4.Text = "Available Tokens"
         ' 
+        ' CheckoutBtn
+        ' 
+        CheckoutBtn.Location = New Point(1180, 32)
+        CheckoutBtn.Name = "CheckoutBtn"
+        CheckoutBtn.Size = New Size(100, 32)
+        CheckoutBtn.TabIndex = 8
+        CheckoutBtn.Text = "Checkout"
+        CheckoutBtn.UseVisualStyleBackColor = True
+        ' 
         ' ProductsForm
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1348, 673)
+        Controls.Add(CheckoutBtn)
         Controls.Add(Label1)
         Controls.Add(AvlTokensLbl)
         Controls.Add(Label4)
@@ -236,4 +247,5 @@ Partial Class ProductsForm
     Friend WithEvents Label1 As Label
     Friend WithEvents AvlTokensLbl As Label
     Friend WithEvents Label4 As Label
+    Friend WithEvents CheckoutBtn As Button
 End Class

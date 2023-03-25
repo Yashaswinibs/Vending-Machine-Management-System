@@ -31,4 +31,5 @@ Public Class MainForm
         Me.Visible = False
         LoginForm.Show()
     End Sub
+
 End Class
