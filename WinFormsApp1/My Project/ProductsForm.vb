@@ -50,4 +50,9 @@ Public Class ProductsForm
             OrderSummaryForm.Show()
         End If
     End Sub
+
+    Private Sub backBtn_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles backBtn.LinkClicked
+        Me.Hide()
+        HomeForm.Show()
+    End Sub
 End Class

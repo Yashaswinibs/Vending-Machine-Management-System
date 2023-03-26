@@ -63,4 +63,29 @@ Public Class HomeForm
         Me.Hide()
         LoginForm.Show()
     End Sub
+
+    Private Sub InteractBtnVM2_Click(sender As Object, e As EventArgs) Handles InteractBtnVM2.Click
+        Me.Hide()
+        ProductsForm.Show()
+    End Sub
+
+    Private Sub InteractBtnVM3_Click(sender As Object, e As EventArgs) Handles InteractBtnVM3.Click
+        Me.Hide()
+        ProductsForm.Show()
+    End Sub
+
+    Private Sub InteractBtnVM4_Click(sender As Object, e As EventArgs) Handles InteractBtnVM4.Click
+        Me.Hide()
+        ProductsForm.Show()
+    End Sub
+
+    Private Sub InteractBtnVM5_Click(sender As Object, e As EventArgs) Handles InteractBtnVM5.Click
+        Me.Hide()
+        ProductsForm.Show()
+    End Sub
+
+    Private Sub InteractBtnVM6_Click(sender As Object, e As EventArgs) Handles InteractBtnVM6.Click
+        Me.Hide()
+        ProductsForm.Show()
+    End Sub
 End Class

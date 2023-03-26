@@ -36,4 +36,15 @@ Public Class OrderSummaryForm
         Return price
     End Function
 
+    Private Sub backBtn_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles backBtn.LinkClicked
+        Me.Hide()
+        ProductsForm.Show()
+    End Sub
+
+    Private Sub CheckoutBtn_Click(sender As Object, e As EventArgs) Handles CheckoutBtn.Click
+        For rowIndex As Integer = 0 To DGV.RowCount - 2
+            OrderTotal = CInt(DGV.Rows(rowIndex).Cells("Total").Value)
+        Next
+        MessageBox.Show($"Confirm Order of {OrderTotal}")
+    End Sub
 End Class

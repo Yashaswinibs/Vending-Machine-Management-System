@@ -30,6 +30,7 @@ Partial Class OrderSummaryForm
         Total = New DataGridViewTextBoxColumn()
         ProgressBar1 = New ProgressBar()
         CheckoutBtn = New Button()
+        backBtn = New LinkLabel()
         CType(DGV, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -98,11 +99,23 @@ Partial Class OrderSummaryForm
         CheckoutBtn.Text = "Checkout"
         CheckoutBtn.UseVisualStyleBackColor = True
         ' 
+        ' backBtn
+        ' 
+        backBtn.AutoSize = True
+        backBtn.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        backBtn.Location = New Point(790, 46)
+        backBtn.Name = "backBtn"
+        backBtn.Size = New Size(104, 25)
+        backBtn.TabIndex = 10
+        backBtn.TabStop = True
+        backBtn.Text = "< Go Back"
+        ' 
         ' OrderSummaryForm
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(982, 553)
+        Controls.Add(backBtn)
         Controls.Add(CheckoutBtn)
         Controls.Add(ProgressBar1)
         Controls.Add(DGV)
@@ -122,4 +135,5 @@ Partial Class OrderSummaryForm
     Friend WithEvents Total As DataGridViewTextBoxColumn
     Friend WithEvents ProgressBar1 As ProgressBar
     Friend WithEvents CheckoutBtn As Button
+    Friend WithEvents backBtn As LinkLabel
 End Class

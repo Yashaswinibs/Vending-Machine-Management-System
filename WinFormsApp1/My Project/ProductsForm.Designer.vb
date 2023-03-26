@@ -39,6 +39,7 @@ Partial Class ProductsForm
         AvlTokensLbl = New Label()
         Label4 = New Label()
         CheckoutBtn = New Button()
+        backBtn = New LinkLabel()
         FlowLayoutPanel1.SuspendLayout()
         SuspendLayout()
         ' 
@@ -203,18 +204,30 @@ Partial Class ProductsForm
         ' 
         ' CheckoutBtn
         ' 
-        CheckoutBtn.Location = New Point(1180, 32)
+        CheckoutBtn.Location = New Point(1180, 61)
         CheckoutBtn.Name = "CheckoutBtn"
-        CheckoutBtn.Size = New Size(100, 32)
+        CheckoutBtn.Size = New Size(100, 36)
         CheckoutBtn.TabIndex = 8
         CheckoutBtn.Text = "Checkout"
         CheckoutBtn.UseVisualStyleBackColor = True
+        ' 
+        ' backBtn
+        ' 
+        backBtn.AutoSize = True
+        backBtn.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        backBtn.Location = New Point(1180, 22)
+        backBtn.Name = "backBtn"
+        backBtn.Size = New Size(104, 25)
+        backBtn.TabIndex = 9
+        backBtn.TabStop = True
+        backBtn.Text = "< Go Back"
         ' 
         ' ProductsForm
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1348, 673)
+        Controls.Add(backBtn)
         Controls.Add(CheckoutBtn)
         Controls.Add(Label1)
         Controls.Add(AvlTokensLbl)
@@ -248,4 +261,5 @@ Partial Class ProductsForm
     Friend WithEvents AvlTokensLbl As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents CheckoutBtn As Button
+    Friend WithEvents backBtn As LinkLabel
 End Class
