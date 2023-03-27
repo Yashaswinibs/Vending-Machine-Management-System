@@ -50,19 +50,35 @@ Public Class HomeForm
         Next
     End Sub
 
+
+    Private Sub LogOutBtn_Click(sender As Object, e As EventArgs) Handles LogOutBtn.Click
+        ClearInputsOnLogout()
+        MessageBox.Show("Logging Out")
+        Me.Hide()
+        LoginForm.Show()
+    End Sub
+
+
+    Private Sub ClearInputsOnLogout()
+        LoginForm.loginInfo.Username = ""
+        LoginForm.loginInfo.Fullname = ""
+        LoginForm.loginInfo.Tokens = 0
+        ProductsForm.AvlTokensLbl.Text = "0"
+        ProductsForm.CartValueLbl.Text = "0"
+        ProductsForm.Cart.Clear()
+        For Each product As Product In ProductsForm.GetProductList()
+            product.SelectedQty = 0
+            product.UpdateSelectedLblQty()
+        Next
+    End Sub
+
+
     Private Sub InteractBtnVM1_Click(sender As Object, e As EventArgs) Handles InteractBtnVM1.Click
         Me.Hide()
         ProductsForm.Show()
     End Sub
 
-    Private Sub LogOutBtn_Click(sender As Object, e As EventArgs) Handles LogOutBtn.Click
-        LoginForm.loginInfo.Username = ""
-        LoginForm.loginInfo.Fullname = ""
-        LoginForm.loginInfo.Tokens = 0
-        MessageBox.Show("Logging Out")
-        Me.Hide()
-        LoginForm.Show()
-    End Sub
+
 
     Private Sub InteractBtnVM2_Click(sender As Object, e As EventArgs) Handles InteractBtnVM2.Click
         Me.Hide()

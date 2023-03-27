@@ -8,16 +8,7 @@ Public Class ProductsForm
 
     Private Sub ProductsForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         AvlTokensLbl.Text = LoginForm.loginInfo.Tokens
-
-        Products.Add(Product1)
-        Products.Add(Product2)
-        Products.Add(Product3)
-        Products.Add(Product4)
-        Products.Add(Product5)
-        Products.Add(Product6)
-        Products.Add(Product7)
-        Products.Add(Product8)
-        Products.Add(Product9)
+        Products = GetProductList()
 
         conn.Open()
         Dim SqlQuery As String = "SELECT * FROM PRODUCTS;"
@@ -55,4 +46,17 @@ Public Class ProductsForm
         Me.Hide()
         HomeForm.Show()
     End Sub
+
+
+    Public Function GetProductList() As List(Of Product)
+        Dim productList As New List(Of Product)
+
+        ' Loop through all controls on the form and Check if the control is a Product user control
+        For Each ctrl As Control In FlowLayoutPanel1.Controls
+            If TypeOf ctrl Is Product Then
+                productList.Add(ctrl)
+            End If
+        Next
+        Return productList
+    End Function
 End Class

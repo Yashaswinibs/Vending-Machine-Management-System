@@ -20,7 +20,7 @@
     End Sub
 
 
-    Private Sub UpdateSelectedLblQty()
+    Public Sub UpdateSelectedLblQty()
         If SelectedQty = 0 Then
             SelectedQtyLbl.Text = ""
         Else

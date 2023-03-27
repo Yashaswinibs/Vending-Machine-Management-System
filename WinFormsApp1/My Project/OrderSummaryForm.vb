@@ -43,7 +43,7 @@ Public Class OrderSummaryForm
 
     Private Sub CheckoutBtn_Click(sender As Object, e As EventArgs) Handles CheckoutBtn.Click
         For rowIndex As Integer = 0 To DGV.RowCount - 2
-            OrderTotal = CInt(DGV.Rows(rowIndex).Cells("Total").Value)
+            OrderTotal += CInt(DGV.Rows(rowIndex).Cells("Total").Value)
         Next
         MessageBox.Show($"Confirm Order of {OrderTotal}")
     End Sub
