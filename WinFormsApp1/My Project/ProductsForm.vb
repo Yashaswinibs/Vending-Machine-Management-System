@@ -15,7 +15,7 @@ Public Class ProductsForm
         Dim Cmd As New SQLiteCommand(SqlQuery, conn)
         Dim reader = Cmd.ExecuteReader()
         While reader.Read()
-            DBProducts.Add(New ProductBP(reader("ProductName"), CInt(reader("ProductPrice"))))
+            DBProducts.Add(New ProductBP(reader("ProductName"), reader("ProductPrice")))
         End While
         conn.Close()
 

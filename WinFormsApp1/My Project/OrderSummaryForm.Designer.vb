@@ -31,6 +31,7 @@ Partial Class OrderSummaryForm
         ProgressBar1 = New ProgressBar()
         CheckoutBtn = New Button()
         backBtn = New LinkLabel()
+        refreshBtn = New Button()
         CType(DGV, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -103,18 +104,28 @@ Partial Class OrderSummaryForm
         ' 
         backBtn.AutoSize = True
         backBtn.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        backBtn.Location = New Point(790, 46)
+        backBtn.Location = New Point(790, 14)
         backBtn.Name = "backBtn"
         backBtn.Size = New Size(104, 25)
         backBtn.TabIndex = 10
         backBtn.TabStop = True
         backBtn.Text = "< Go Back"
         ' 
+        ' refreshBtn
+        ' 
+        refreshBtn.Location = New Point(794, 58)
+        refreshBtn.Name = "refreshBtn"
+        refreshBtn.Size = New Size(100, 36)
+        refreshBtn.TabIndex = 11
+        refreshBtn.Text = "Refresh"
+        refreshBtn.UseVisualStyleBackColor = True
+        ' 
         ' OrderSummaryForm
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(982, 553)
+        Controls.Add(refreshBtn)
         Controls.Add(backBtn)
         Controls.Add(CheckoutBtn)
         Controls.Add(ProgressBar1)
@@ -136,4 +147,5 @@ Partial Class OrderSummaryForm
     Friend WithEvents ProgressBar1 As ProgressBar
     Friend WithEvents CheckoutBtn As Button
     Friend WithEvents backBtn As LinkLabel
+    Friend WithEvents refreshBtn As Button
 End Class

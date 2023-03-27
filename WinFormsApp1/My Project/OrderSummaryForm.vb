@@ -5,24 +5,7 @@ Public Class OrderSummaryForm
     Public OrderSummary As Hashtable = New Hashtable()
     Public OrderTotal As Integer
     Private Sub OrderSummaryForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        For Each product As ProductBP In ProductsForm.Cart
-            If Not OrderSummary.Contains(product.ProdName) Then
-                OrderSummary.Add(product.ProdName, 1)
-            Else
-                Dim ExistingQty As Integer = OrderSummary.Item(product.ProdName)
-                OrderSummary.Item(product.ProdName) = ExistingQty + 1
-            End If
-        Next
-
-        ' Show products in DataGridView
-        For Each kvp As DictionaryEntry In OrderSummary
-            Dim Index As Integer = DGV.Rows.Add()
-            Dim ProdPrice As Integer = GetPrice(kvp.Key)
-            DGV.Rows(Index).Cells("ProdName").Value = kvp.Key
-            DGV.Rows(Index).Cells("ProdQty").Value = kvp.Value
-            DGV.Rows(Index).Cells("ProdPrice").Value = ProdPrice
-            DGV.Rows(Index).Cells("Total").Value = kvp.Value * ProdPrice
-        Next
+        updateOrderSummary()
     End Sub
 
 
@@ -47,4 +30,33 @@ Public Class OrderSummaryForm
         Next
         MessageBox.Show($"Confirm Order of {OrderTotal}")
     End Sub
+
+    Private Sub refreshBtn_Click(sender As Object, e As EventArgs) Handles refreshBtn.Click
+        updateOrderSummary()
+    End Sub
+
+
+    Private Sub updateOrderSummary()
+        OrderSummary.Clear()
+        DGV.Rows.Clear()
+        For Each product As ProductBP In ProductsForm.Cart
+            If Not OrderSummary.Contains(product.ProdName) Then
+                OrderSummary.Add(product.ProdName, 1)
+            Else
+                Dim ExistingQty As Integer = OrderSummary.Item(product.ProdName)
+                OrderSummary.Item(product.ProdName) = ExistingQty + 1
+            End If
+        Next
+
+        ' Show products in DataGridView
+        For Each kvp As DictionaryEntry In OrderSummary
+            Dim Index As Integer = DGV.Rows.Add()
+            Dim ProdPrice As Integer = GetPrice(kvp.Key)
+            DGV.Rows(Index).Cells("ProdName").Value = kvp.Key
+            DGV.Rows(Index).Cells("ProdQty").Value = kvp.Value
+            DGV.Rows(Index).Cells("ProdPrice").Value = ProdPrice
+            DGV.Rows(Index).Cells("Total").Value = kvp.Value * ProdPrice
+        Next
+    End Sub
+
 End Class
