@@ -14,17 +14,18 @@ Public Class RegisterForm
         Else
             Try
                 conn.Open()
-                Dim SqlQuery As String = $"INSERT INTO USERS VALUES ('{username}', '{password}', '{fullName}', 'user');"
+                Dim SqlQuery As String = $"INSERT INTO USERS VALUES ('{username}', '{password}', '{fullName}', 'user', 100);"
                 Dim Cmd As New SQLiteCommand(SqlQuery, conn)
                 Dim RowsAffected As Integer = Cmd.ExecuteNonQuery()
                 If RowsAffected = 1 Then
                     MessageBox.Show("Account Created Successfully")
                     ClearInputs()
                 End If
-                conn.Close()
-            Catch ex As System.Data.SQLite.SQLiteException
+            Catch ex As SQLiteException
                 MessageBox.Show("Username Already Exists! Account not created")
                 ClearInputs()
+            Finally
+                conn.Close()
             End Try
         End If
     End Sub

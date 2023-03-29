@@ -28,7 +28,7 @@ Partial Class OrderSummaryForm
         ProdQty = New DataGridViewTextBoxColumn()
         ProdPrice = New DataGridViewTextBoxColumn()
         Total = New DataGridViewTextBoxColumn()
-        ProgressBar1 = New ProgressBar()
+        orderProgress = New ProgressBar()
         CheckoutBtn = New Button()
         backBtn = New LinkLabel()
         refreshBtn = New Button()
@@ -84,12 +84,12 @@ Partial Class OrderSummaryForm
         Total.Name = "Total"
         Total.Width = 125
         ' 
-        ' ProgressBar1
+        ' orderProgress
         ' 
-        ProgressBar1.Location = New Point(88, 464)
-        ProgressBar1.Name = "ProgressBar1"
-        ProgressBar1.Size = New Size(621, 40)
-        ProgressBar1.TabIndex = 2
+        orderProgress.Location = New Point(88, 464)
+        orderProgress.Name = "orderProgress"
+        orderProgress.Size = New Size(621, 40)
+        orderProgress.TabIndex = 2
         ' 
         ' CheckoutBtn
         ' 
@@ -128,7 +128,7 @@ Partial Class OrderSummaryForm
         Controls.Add(refreshBtn)
         Controls.Add(backBtn)
         Controls.Add(CheckoutBtn)
-        Controls.Add(ProgressBar1)
+        Controls.Add(orderProgress)
         Controls.Add(DGV)
         Controls.Add(Label1)
         Name = "OrderSummaryForm"
@@ -144,7 +144,7 @@ Partial Class OrderSummaryForm
     Friend WithEvents ProdQty As DataGridViewTextBoxColumn
     Friend WithEvents ProdPrice As DataGridViewTextBoxColumn
     Friend WithEvents Total As DataGridViewTextBoxColumn
-    Friend WithEvents ProgressBar1 As ProgressBar
+    Friend WithEvents orderProgress As ProgressBar
     Friend WithEvents CheckoutBtn As Button
     Friend WithEvents backBtn As LinkLabel
     Friend WithEvents refreshBtn As Button

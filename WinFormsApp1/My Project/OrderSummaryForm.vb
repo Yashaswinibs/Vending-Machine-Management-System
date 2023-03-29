@@ -1,4 +1,5 @@
 ﻿Imports System.Data.SQLite
+Imports System.Threading
 
 Public Class OrderSummaryForm
     Private conn As SQLiteConnection = MainForm.conn
@@ -24,12 +25,6 @@ Public Class OrderSummaryForm
         ProductsForm.Show()
     End Sub
 
-    Private Sub CheckoutBtn_Click(sender As Object, e As EventArgs) Handles CheckoutBtn.Click
-        For rowIndex As Integer = 0 To DGV.RowCount - 2
-            OrderTotal += CInt(DGV.Rows(rowIndex).Cells("Total").Value)
-        Next
-        MessageBox.Show($"Confirm Order of {OrderTotal}")
-    End Sub
 
     Private Sub refreshBtn_Click(sender As Object, e As EventArgs) Handles refreshBtn.Click
         updateOrderSummary()
@@ -57,6 +52,47 @@ Public Class OrderSummaryForm
             DGV.Rows(Index).Cells("ProdPrice").Value = ProdPrice
             DGV.Rows(Index).Cells("Total").Value = kvp.Value * ProdPrice
         Next
+    End Sub
+
+
+
+    Private Sub CheckoutBtn_Click(sender As Object, e As EventArgs) Handles CheckoutBtn.Click
+        For rowIndex As Integer = 0 To DGV.RowCount - 2
+            OrderTotal += CInt(DGV.Rows(rowIndex).Cells("Total").Value)
+        Next
+        Dim confirmMsg = MessageBox.Show($"Confirm Order of ₹{OrderTotal}", "Confirm Order", MessageBoxButtons.OKCancel)
+        If confirmMsg = 1 Then
+            ConfirmCheckout()
+        End If
+    End Sub
+
+
+    Private Sub ConfirmCheckout()
+        While Not orderProgress.Value = 100
+            Dim randInt = New Random().Next(1, 101)
+            If randInt > 98 Then
+                orderProgress.Value = 100
+            Else
+                orderProgress.Value += 1
+            End If
+            Thread.Sleep(100)
+        End While
+        UpdateDB()
+        MessageBox.Show("Vend Successfull 🎉", "VendIT - Vending Machine Management System")
+    End Sub
+
+
+    Private Sub UpdateDB()
+        conn.Open()
+        For Each product As ProductBP In ProductsForm.Cart
+            Dim SqlQuery As String = $"UPDATE PRODUCTS_AVAILABLE SET Quantity = Quantity - 1 WHERE VMID='{ProductsForm.VendingMachineID}' AND ProductID='{product.ProdID}'"
+            Dim Cmd As New SQLiteCommand(SqlQuery, conn)
+            Dim RowsAffected = Cmd.ExecuteNonQuery()
+            If Not RowsAffected = 1 Then
+                MessageBox.Show($"Something Went Wrong During The Checkout Of {product.ProdName} ({product.ProdID})")
+            End If
+        Next
+        conn.Close()
     End Sub
 
 End Class

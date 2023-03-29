@@ -75,6 +75,8 @@ Public Class HomeForm
 
     Private Sub InteractBtnVM1_Click(sender As Object, e As EventArgs) Handles InteractBtnVM1.Click
         Me.Hide()
+        ProductsForm.Cart.Clear()
+        ProductsForm.VendingMachineID = "VMID0001"
         ProductsForm.Show()
     End Sub
 
@@ -82,11 +84,15 @@ Public Class HomeForm
 
     Private Sub InteractBtnVM2_Click(sender As Object, e As EventArgs) Handles InteractBtnVM2.Click
         Me.Hide()
+        ProductsForm.Cart.Clear()
+        ProductsForm.VendingMachineID = "VMID0002"
         ProductsForm.Show()
     End Sub
 
     Private Sub InteractBtnVM3_Click(sender As Object, e As EventArgs) Handles InteractBtnVM3.Click
         Me.Hide()
+        ProductsForm.Cart.Clear()
+        ProductsForm.VendingMachineID = "VMID0003"
         ProductsForm.Show()
     End Sub
 

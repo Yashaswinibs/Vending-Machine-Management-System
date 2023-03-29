@@ -5,17 +5,23 @@ Public Class ProductsForm
     Public DBProducts As New List(Of ProductBP) ' Products in the database
     Dim Products As New List(Of Product) ' Products in the form
     Public Cart As New List(Of ProductBP)
+    Public VendingMachineID As String
 
-    Private Sub ProductsForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+
+    Private Sub ProductsForm_Paint(sender As Object, e As EventArgs) Handles MyBase.Paint
+        DBProducts.Clear()
+        Products.Clear()
         AvlTokensLbl.Text = LoginForm.loginInfo.Tokens
         Products = GetProductList()
 
         conn.Open()
-        Dim SqlQuery As String = "SELECT * FROM PRODUCTS;"
+        Dim SqlQuery As String = $"SELECT PRODUCTS_AVAILABLE.ProductID, PRODUCTS.ProductName, PRODUCTS.ProductPrice FROM PRODUCTS_AVAILABLE INNER JOIN PRODUCTS ON PRODUCTS.ProductID = PRODUCTS_AVAILABLE.ProductID WHERE PRODUCTS_AVAILABLE.VMID = '{VendingMachineID}';"
+
         Dim Cmd As New SQLiteCommand(SqlQuery, conn)
         Dim reader = Cmd.ExecuteReader()
         While reader.Read()
-            DBProducts.Add(New ProductBP(reader("ProductName"), reader("ProductPrice")))
+            DBProducts.Add(New ProductBP(reader("ProductName"), reader("ProductPrice"), reader("ProductID")))
         End While
         conn.Close()
 
@@ -30,8 +36,11 @@ Public Class ProductsForm
         For i = 0 To DBProducts.Count - 1
             Products(i).prodLbl.Text = DBProducts(i).ProdName
             Products(i).Price = DBProducts(i).ProdPrice
+            Products(i).ProductID = DBProducts(i).ProdID
         Next
     End Sub
+
+
 
     Private Sub CheckoutBtn_Click(sender As Object, e As EventArgs) Handles CheckoutBtn.Click
         If LoginForm.loginInfo.Tokens < CInt(CartValueLbl.Text) Then
@@ -42,8 +51,12 @@ Public Class ProductsForm
         End If
     End Sub
 
+
+
     Private Sub backBtn_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles backBtn.LinkClicked
+        MessageBox.Show(VendingMachineID)
         Me.Hide()
+        ClearInputsOnVMChange()
         HomeForm.Show()
     End Sub
 
@@ -59,4 +72,15 @@ Public Class ProductsForm
         Next
         Return productList
     End Function
+
+
+
+    Private Sub ClearInputsOnVMChange()
+        CartValueLbl.Text = "0"
+        Cart.Clear()
+        For Each product As Product In GetProductList()
+            product.SelectedQty = 0
+            product.UpdateSelectedLblQty()
+        Next
+    End Sub
 End Class

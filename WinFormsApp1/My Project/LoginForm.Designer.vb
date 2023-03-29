@@ -70,7 +70,7 @@ Partial Class LoginForm
         ' LoginBtn
         ' 
         LoginBtn.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        LoginBtn.Location = New Point(597, 423)
+        LoginBtn.Location = New Point(611, 423)
         LoginBtn.Name = "LoginBtn"
         LoginBtn.Size = New Size(128, 48)
         LoginBtn.TabIndex = 4
