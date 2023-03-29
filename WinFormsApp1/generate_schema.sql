@@ -42,11 +42,11 @@ CREATE TABLE ADMINS (
 
 
 CREATE TABLE PURCHASES (
-	PurchaseID		TEXT(8)	PRIMARY KEY,
-	ProductName		TEXT	REFERENCES	PRODUCTS(ProductName),
+	PurchaseID		INTEGER	PRIMARY KEY AUTOINCREMENT,
 	ProductID		TEXT	REFERENCES	PRODUCTS(ProductID),
-	PurchaseTime	Text	DEFAULT(datetime()),
-	PaymentMethod	Text	NOT NULL
+	ProductQty		INTEGER	NOT NULL,
+	PaymentMethod	Text	NOT NULL,
+	PurchaseTime	Text	DEFAULT(datetime())
 );
 
 
@@ -59,9 +59,9 @@ CREATE TABLE PURCHASES (
 
 -- ADMINS
 
+INSERT INTO ADMINS VALUES ('yash', 'admin', 'Yashaswini BS', 'Admin');
 INSERT INTO ADMINS VALUES ('admin', 'admin', 'Administrator', 'Admin');
 INSERT INTO ADMINS VALUES ('shakir', 'shakir035', 'Shakir Ali', 'Admin');
-INSERT INTO ADMINS VALUES ('yash', 'admin', 'Yashaswini BS', 'Admin');
 
 
 -- VENDING MACHINES
@@ -168,3 +168,6 @@ INSERT INTO PRODUCTS_AVAILABLE VALUES ('VMID0006', 'PROD0010', 22);
 
 -- Retrieve ProductID, ProductName And Price From Database
 SELECT PRODUCTS_AVAILABLE.ProductID, PRODUCTS.ProductName, PRODUCTS.ProductPrice FROM PRODUCTS_AVAILABLE INNER JOIN PRODUCTS ON PRODUCTS.ProductID = PRODUCTS_AVAILABLE.ProductID WHERE PRODUCTS_AVAILABLE.VMID = 'VMID0001';
+
+
+INSERT INTO PURCHASES (ProductID, ProductQty, PaymentMethod) VALUES ('PROD0001', 2, 'Credit Card');
