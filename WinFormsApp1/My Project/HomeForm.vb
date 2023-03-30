@@ -16,6 +16,7 @@ Public Class HomeForm
             Locations.Add(reader("VMLocation"))
             VMStatus.Add(reader("Status"))
         End While
+        reader.Close()
         conn.Close()
 
         For i = 0 To VendingMachines.Count - 1

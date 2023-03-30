@@ -18,6 +18,7 @@ Public Class LoginForm
                 loginInfo.Username = reader("Username")
                 loginInfo.Fullname = reader("FullName")
                 loginInfo.Tokens = CInt(reader("Tokens"))
+                reader.Close()
                 conn.Close() ' Don't forget to close the connection on a successful login :)
                 Me.Hide()
                 HomeForm.Show()
@@ -26,6 +27,7 @@ Public Class LoginForm
             MessageBox.Show("Login Failed")
             ClearInputs()
         End If
+        reader.Close()
         conn.Close()
     End Sub
 
@@ -34,6 +36,7 @@ Public Class LoginForm
         UsernameTB.Text = ""
         PasswordTB.Text = ""
     End Sub
+
 
     Private Sub backLink_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles backLink.LinkClicked
         ClearInputs()

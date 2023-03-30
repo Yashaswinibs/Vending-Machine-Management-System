@@ -226,7 +226,7 @@ Partial Class ProductsForm
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1348, 673)
+        ClientSize = New Size(1348, 721)
         Controls.Add(backBtn)
         Controls.Add(CheckoutBtn)
         Controls.Add(Label1)
