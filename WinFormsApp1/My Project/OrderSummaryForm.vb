@@ -100,7 +100,7 @@ Public Class OrderSummaryForm
         For Each product As Product In OrderSummary.Keys
             Dim ProdId As String = product.ProdID
             Dim ProdQty As Integer = OrderSummary.Item(product)
-            Dim SqlQuery As String = $"INSERT INTO PURCHASES (ProductID, ProductQty, PaymentMethod) VALUES ('{ProdId}', {ProdQty}, 'UPI')"
+            Dim SqlQuery As String = $"INSERT INTO PURCHASES (VMID, ProductID, ProductQty, PaymentMethod) VALUES ('{ProductsForm.VendingMachineID}', '{ProdId}', {ProdQty}, 'UPI')"
             Dim Cmd As New SQLiteCommand(SqlQuery, conn)
             Dim RowsAffected = Cmd.ExecuteNonQuery()
             If Not RowsAffected = 1 Then

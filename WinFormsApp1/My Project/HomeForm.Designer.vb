@@ -28,23 +28,23 @@ Partial Class HomeForm
         VM1ViewPurchasesBtn = New Button()
         InteractBtnVM1 = New Button()
         VM3 = New GroupBox()
-        Button1 = New Button()
+        VM3ViewPurchasesBtn = New Button()
         InteractBtnVM3 = New Button()
         LocationVM3 = New Button()
         VM4 = New GroupBox()
-        Button5 = New Button()
+        VM4ViewPurchasesBtn = New Button()
         InteractBtnVM4 = New Button()
         LocationVM4 = New Button()
         VM2 = New GroupBox()
-        Button8 = New Button()
+        VM2ViewPurchasesBtn = New Button()
         InteractBtnVM2 = New Button()
         LocationVM2 = New Button()
         VM5 = New GroupBox()
-        Button11 = New Button()
+        VM5ViewPurchasesBtn = New Button()
         InteractBtnVM5 = New Button()
         LocationVM5 = New Button()
         VM6 = New GroupBox()
-        Button14 = New Button()
+        VM6ViewPurchasesBtn = New Button()
         InteractBtnVM6 = New Button()
         LocationVM6 = New Button()
         GreetingLbl = New Label()
@@ -70,6 +70,7 @@ Partial Class HomeForm
         ' LocationVM1
         ' 
         LocationVM1.BackColor = SystemColors.MenuHighlight
+        LocationVM1.Enabled = False
         LocationVM1.FlatStyle = FlatStyle.Popup
         LocationVM1.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
         LocationVM1.ForeColor = SystemColors.ButtonFace
@@ -116,7 +117,7 @@ Partial Class HomeForm
         ' VM3
         ' 
         VM3.BackColor = SystemColors.GradientInactiveCaption
-        VM3.Controls.Add(Button1)
+        VM3.Controls.Add(VM3ViewPurchasesBtn)
         VM3.Controls.Add(InteractBtnVM3)
         VM3.Controls.Add(LocationVM3)
         VM3.ForeColor = SystemColors.ActiveCaptionText
@@ -128,14 +129,14 @@ Partial Class HomeForm
         VM3.TabStop = False
         VM3.Text = "Vending Machine 3"
         ' 
-        ' Button1
+        ' VM3ViewPurchasesBtn
         ' 
-        Button1.Location = New Point(28, 246)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(256, 32)
-        Button1.TabIndex = 4
-        Button1.Text = "View Purchases"
-        Button1.UseVisualStyleBackColor = True
+        VM3ViewPurchasesBtn.Location = New Point(28, 246)
+        VM3ViewPurchasesBtn.Name = "VM3ViewPurchasesBtn"
+        VM3ViewPurchasesBtn.Size = New Size(256, 32)
+        VM3ViewPurchasesBtn.TabIndex = 4
+        VM3ViewPurchasesBtn.Text = "View Purchases"
+        VM3ViewPurchasesBtn.UseVisualStyleBackColor = True
         ' 
         ' InteractBtnVM3
         ' 
@@ -149,6 +150,7 @@ Partial Class HomeForm
         ' LocationVM3
         ' 
         LocationVM3.BackColor = SystemColors.MenuHighlight
+        LocationVM3.Enabled = False
         LocationVM3.FlatStyle = FlatStyle.Popup
         LocationVM3.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
         LocationVM3.ForeColor = SystemColors.ButtonFace
@@ -162,7 +164,7 @@ Partial Class HomeForm
         ' VM4
         ' 
         VM4.BackColor = SystemColors.GradientInactiveCaption
-        VM4.Controls.Add(Button5)
+        VM4.Controls.Add(VM4ViewPurchasesBtn)
         VM4.Controls.Add(InteractBtnVM4)
         VM4.Controls.Add(LocationVM4)
         VM4.ForeColor = SystemColors.ActiveCaptionText
@@ -173,14 +175,14 @@ Partial Class HomeForm
         VM4.TabStop = False
         VM4.Text = "Vending Machine 4"
         ' 
-        ' Button5
+        ' VM4ViewPurchasesBtn
         ' 
-        Button5.Location = New Point(28, 246)
-        Button5.Name = "Button5"
-        Button5.Size = New Size(256, 32)
-        Button5.TabIndex = 4
-        Button5.Text = "View Purchases"
-        Button5.UseVisualStyleBackColor = True
+        VM4ViewPurchasesBtn.Location = New Point(28, 246)
+        VM4ViewPurchasesBtn.Name = "VM4ViewPurchasesBtn"
+        VM4ViewPurchasesBtn.Size = New Size(256, 32)
+        VM4ViewPurchasesBtn.TabIndex = 4
+        VM4ViewPurchasesBtn.Text = "View Purchases"
+        VM4ViewPurchasesBtn.UseVisualStyleBackColor = True
         ' 
         ' InteractBtnVM4
         ' 
@@ -194,6 +196,7 @@ Partial Class HomeForm
         ' LocationVM4
         ' 
         LocationVM4.BackColor = SystemColors.MenuHighlight
+        LocationVM4.Enabled = False
         LocationVM4.FlatStyle = FlatStyle.Popup
         LocationVM4.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
         LocationVM4.ForeColor = SystemColors.ButtonFace
@@ -207,7 +210,7 @@ Partial Class HomeForm
         ' VM2
         ' 
         VM2.BackColor = SystemColors.GradientInactiveCaption
-        VM2.Controls.Add(Button8)
+        VM2.Controls.Add(VM2ViewPurchasesBtn)
         VM2.Controls.Add(InteractBtnVM2)
         VM2.Controls.Add(LocationVM2)
         VM2.ForeColor = SystemColors.ActiveCaptionText
@@ -219,14 +222,14 @@ Partial Class HomeForm
         VM2.TabStop = False
         VM2.Text = "Vending Machine 2"
         ' 
-        ' Button8
+        ' VM2ViewPurchasesBtn
         ' 
-        Button8.Location = New Point(28, 246)
-        Button8.Name = "Button8"
-        Button8.Size = New Size(256, 32)
-        Button8.TabIndex = 4
-        Button8.Text = "View Purchases"
-        Button8.UseVisualStyleBackColor = True
+        VM2ViewPurchasesBtn.Location = New Point(28, 246)
+        VM2ViewPurchasesBtn.Name = "VM2ViewPurchasesBtn"
+        VM2ViewPurchasesBtn.Size = New Size(256, 32)
+        VM2ViewPurchasesBtn.TabIndex = 4
+        VM2ViewPurchasesBtn.Text = "View Purchases"
+        VM2ViewPurchasesBtn.UseVisualStyleBackColor = True
         ' 
         ' InteractBtnVM2
         ' 
@@ -240,6 +243,7 @@ Partial Class HomeForm
         ' LocationVM2
         ' 
         LocationVM2.BackColor = SystemColors.MenuHighlight
+        LocationVM2.Enabled = False
         LocationVM2.FlatStyle = FlatStyle.Popup
         LocationVM2.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
         LocationVM2.ForeColor = SystemColors.ButtonFace
@@ -252,7 +256,7 @@ Partial Class HomeForm
         ' VM5
         ' 
         VM5.BackColor = SystemColors.GradientInactiveCaption
-        VM5.Controls.Add(Button11)
+        VM5.Controls.Add(VM5ViewPurchasesBtn)
         VM5.Controls.Add(InteractBtnVM5)
         VM5.Controls.Add(LocationVM5)
         VM5.ForeColor = SystemColors.ActiveCaptionText
@@ -263,14 +267,14 @@ Partial Class HomeForm
         VM5.TabStop = False
         VM5.Text = "Vending Machine 5"
         ' 
-        ' Button11
+        ' VM5ViewPurchasesBtn
         ' 
-        Button11.Location = New Point(28, 246)
-        Button11.Name = "Button11"
-        Button11.Size = New Size(256, 32)
-        Button11.TabIndex = 4
-        Button11.Text = "View Purchases"
-        Button11.UseVisualStyleBackColor = True
+        VM5ViewPurchasesBtn.Location = New Point(28, 246)
+        VM5ViewPurchasesBtn.Name = "VM5ViewPurchasesBtn"
+        VM5ViewPurchasesBtn.Size = New Size(256, 32)
+        VM5ViewPurchasesBtn.TabIndex = 4
+        VM5ViewPurchasesBtn.Text = "View Purchases"
+        VM5ViewPurchasesBtn.UseVisualStyleBackColor = True
         ' 
         ' InteractBtnVM5
         ' 
@@ -284,6 +288,7 @@ Partial Class HomeForm
         ' LocationVM5
         ' 
         LocationVM5.BackColor = SystemColors.MenuHighlight
+        LocationVM5.Enabled = False
         LocationVM5.FlatStyle = FlatStyle.Popup
         LocationVM5.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
         LocationVM5.ForeColor = SystemColors.ButtonFace
@@ -297,7 +302,7 @@ Partial Class HomeForm
         ' VM6
         ' 
         VM6.BackColor = SystemColors.GradientInactiveCaption
-        VM6.Controls.Add(Button14)
+        VM6.Controls.Add(VM6ViewPurchasesBtn)
         VM6.Controls.Add(InteractBtnVM6)
         VM6.Controls.Add(LocationVM6)
         VM6.ForeColor = SystemColors.ActiveCaptionText
@@ -308,14 +313,14 @@ Partial Class HomeForm
         VM6.TabStop = False
         VM6.Text = "Vending Machine 6"
         ' 
-        ' Button14
+        ' VM6ViewPurchasesBtn
         ' 
-        Button14.Location = New Point(28, 246)
-        Button14.Name = "Button14"
-        Button14.Size = New Size(256, 32)
-        Button14.TabIndex = 4
-        Button14.Text = "View Purchases"
-        Button14.UseVisualStyleBackColor = True
+        VM6ViewPurchasesBtn.Location = New Point(28, 246)
+        VM6ViewPurchasesBtn.Name = "VM6ViewPurchasesBtn"
+        VM6ViewPurchasesBtn.Size = New Size(256, 32)
+        VM6ViewPurchasesBtn.TabIndex = 4
+        VM6ViewPurchasesBtn.Text = "View Purchases"
+        VM6ViewPurchasesBtn.UseVisualStyleBackColor = True
         ' 
         ' InteractBtnVM6
         ' 
@@ -329,6 +334,7 @@ Partial Class HomeForm
         ' LocationVM6
         ' 
         LocationVM6.BackColor = SystemColors.MenuHighlight
+        LocationVM6.Enabled = False
         LocationVM6.FlatStyle = FlatStyle.Popup
         LocationVM6.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
         LocationVM6.ForeColor = SystemColors.ButtonFace
@@ -391,23 +397,23 @@ Partial Class HomeForm
     Friend WithEvents VM1ViewPurchasesBtn As Button
     Friend WithEvents InteractBtnVM1 As Button
     Friend WithEvents VM3 As GroupBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents VM3ViewPurchasesBtn As Button
     Friend WithEvents InteractBtnVM3 As Button
     Friend WithEvents LocationVM3 As Button
     Friend WithEvents VM4 As GroupBox
-    Friend WithEvents Button5 As Button
+    Friend WithEvents VM4ViewPurchasesBtn As Button
     Friend WithEvents InteractBtnVM4 As Button
     Friend WithEvents LocationVM4 As Button
     Friend WithEvents VM2 As GroupBox
-    Friend WithEvents Button8 As Button
+    Friend WithEvents VM2ViewPurchasesBtn As Button
     Friend WithEvents InteractBtnVM2 As Button
     Friend WithEvents LocationVM2 As Button
     Friend WithEvents VM5 As GroupBox
-    Friend WithEvents Button11 As Button
+    Friend WithEvents VM5ViewPurchasesBtn As Button
     Friend WithEvents InteractBtnVM5 As Button
     Friend WithEvents LocationVM5 As Button
     Friend WithEvents VM6 As GroupBox
-    Friend WithEvents Button14 As Button
+    Friend WithEvents VM6ViewPurchasesBtn As Button
     Friend WithEvents InteractBtnVM6 As Button
     Friend WithEvents LocationVM6 As Button
     Friend WithEvents GreetingLbl As Label

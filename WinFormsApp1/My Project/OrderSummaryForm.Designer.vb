@@ -132,6 +132,7 @@ Partial Class OrderSummaryForm
         Controls.Add(DGV)
         Controls.Add(Label1)
         Name = "OrderSummaryForm"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "VendIT - Order Summary"
         CType(DGV, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)

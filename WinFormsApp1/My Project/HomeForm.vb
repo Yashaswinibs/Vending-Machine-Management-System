@@ -111,4 +111,40 @@ Public Class HomeForm
         Me.Hide()
         ProductsForm.Show()
     End Sub
+
+    Private Sub VM1ViewPurchasesBtn_Click(sender As Object, e As EventArgs) Handles VM1ViewPurchasesBtn.Click
+        TransactionsForm.VMID = "VMID0001"
+        Me.Hide()
+        TransactionsForm.Show()
+    End Sub
+
+    Private Sub VM2ViewPurchasesBtn_Click(sender As Object, e As EventArgs) Handles VM2ViewPurchasesBtn.Click
+        TransactionsForm.VMID = "VMID0002"
+        Me.Hide()
+        TransactionsForm.Show()
+    End Sub
+
+    Private Sub VM3ViewPurchasesBtn_Click(sender As Object, e As EventArgs) Handles VM3ViewPurchasesBtn.Click
+        TransactionsForm.VMID = "VMID0003"
+        Me.Hide()
+        TransactionsForm.Show()
+    End Sub
+
+    Private Sub VM4ViewPurchasesBtn_Click(sender As Object, e As EventArgs) Handles VM4ViewPurchasesBtn.Click
+        TransactionsForm.VMID = "VMID0004"
+        Me.Hide()
+        TransactionsForm.Show()
+    End Sub
+
+    Private Sub VM5ViewPurchasesBtn_Click(sender As Object, e As EventArgs) Handles VM5ViewPurchasesBtn.Click
+        TransactionsForm.VMID = "VMID0005"
+        Me.Hide()
+        TransactionsForm.Show()
+    End Sub
+
+    Private Sub VM6ViewPurchasesBtn_Click(sender As Object, e As EventArgs) Handles VM6ViewPurchasesBtn.Click
+        TransactionsForm.VMID = "VMID0006"
+        Me.Hide()
+        TransactionsForm.Show()
+    End Sub
 End Class
