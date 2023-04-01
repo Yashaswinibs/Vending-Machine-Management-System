@@ -27,9 +27,14 @@ Public Class MainForm
 
     End Sub
 
-    Private Sub LoginBtn_Click(sender As Object, e As EventArgs) Handles LoginBtn.Click
+    Private Sub LoginBtn_Click(sender As Object, e As EventArgs) Handles custLoginBtn.Click
         Me.Visible = False
         LoginForm.Show()
+    End Sub
+
+    Private Sub admLoginBtn_Click(sender As Object, e As EventArgs) Handles admLoginBtn.Click
+        Me.Visible = False
+        AdminLoginForm.Show()
     End Sub
 
 End Class

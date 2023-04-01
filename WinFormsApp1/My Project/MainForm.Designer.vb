@@ -23,43 +23,83 @@ Partial Class MainForm
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         RegisterBtn = New Button()
-        LoginBtn = New Button()
+        custLoginBtn = New Button()
+        admLoginBtn = New Button()
+        VendIT = New Label()
+        Label1 = New Label()
         SuspendLayout()
         ' 
         ' RegisterBtn
         ' 
         RegisterBtn.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        RegisterBtn.Location = New Point(479, 328)
+        RegisterBtn.Location = New Point(159, 359)
         RegisterBtn.Name = "RegisterBtn"
         RegisterBtn.Size = New Size(128, 64)
         RegisterBtn.TabIndex = 0
         RegisterBtn.Text = "Register"
         RegisterBtn.UseVisualStyleBackColor = True
         ' 
-        ' LoginBtn
+        ' custLoginBtn
         ' 
-        LoginBtn.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        LoginBtn.Location = New Point(741, 328)
-        LoginBtn.Name = "LoginBtn"
-        LoginBtn.Size = New Size(128, 64)
-        LoginBtn.TabIndex = 1
-        LoginBtn.Text = "Login"
-        LoginBtn.UseVisualStyleBackColor = True
+        custLoginBtn.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        custLoginBtn.Location = New Point(696, 359)
+        custLoginBtn.Name = "custLoginBtn"
+        custLoginBtn.Size = New Size(128, 64)
+        custLoginBtn.TabIndex = 2
+        custLoginBtn.Text = "Customer Login"
+        custLoginBtn.UseVisualStyleBackColor = True
+        ' 
+        ' admLoginBtn
+        ' 
+        admLoginBtn.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        admLoginBtn.Location = New Point(427, 359)
+        admLoginBtn.Name = "admLoginBtn"
+        admLoginBtn.Size = New Size(128, 64)
+        admLoginBtn.TabIndex = 1
+        admLoginBtn.Text = "Admin Login"
+        admLoginBtn.UseVisualStyleBackColor = True
+        ' 
+        ' VendIT
+        ' 
+        VendIT.AutoSize = True
+        VendIT.Font = New Font("Impact", 28.2F, FontStyle.Regular, GraphicsUnit.Point)
+        VendIT.Location = New Point(408, 43)
+        VendIT.Name = "VendIT"
+        VendIT.Size = New Size(166, 59)
+        VendIT.TabIndex = 3
+        VendIT.Text = "VendIT "
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Font = New Font("Segoe UI", 16.2F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point)
+        Label1.Location = New Point(290, 126)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(534, 38)
+        Label1.TabIndex = 4
+        Label1.Text = "Vending Machine Management System"
         ' 
         ' MainForm
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1348, 721)
-        Controls.Add(LoginBtn)
+        ClientSize = New Size(982, 553)
+        Controls.Add(Label1)
+        Controls.Add(VendIT)
+        Controls.Add(admLoginBtn)
+        Controls.Add(custLoginBtn)
         Controls.Add(RegisterBtn)
         Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
         Name = "MainForm"
         StartPosition = FormStartPosition.CenterScreen
         Text = "VendIT - Vending Machine Management System"
         ResumeLayout(False)
+        PerformLayout()
     End Sub
 
     Friend WithEvents RegisterBtn As Button
-    Friend WithEvents LoginBtn As Button
+    Friend WithEvents custLoginBtn As Button
+    Friend WithEvents admLoginBtn As Button
+    Friend WithEvents VendIT As Label
+    Friend WithEvents Label1 As Label
 End Class
