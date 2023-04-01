@@ -37,12 +37,14 @@ Partial Class AdminDashboardForm
         Label2 = New Label()
         Label1 = New Label()
         LogoutBtn = New Button()
+        ApplyBtn = New Button()
+        RefreshBtn = New Button()
         SuspendLayout()
         ' 
         ' VM6Lbl
         ' 
         VM6Lbl.AutoSize = True
-        VM6Lbl.Location = New Point(522, 496)
+        VM6Lbl.Location = New Point(522, 469)
         VM6Lbl.Name = "VM6Lbl"
         VM6Lbl.Size = New Size(135, 20)
         VM6Lbl.TabIndex = 41
@@ -51,7 +53,7 @@ Partial Class AdminDashboardForm
         ' VM5Lbl
         ' 
         VM5Lbl.AutoSize = True
-        VM5Lbl.Location = New Point(522, 439)
+        VM5Lbl.Location = New Point(522, 412)
         VM5Lbl.Name = "VM5Lbl"
         VM5Lbl.Size = New Size(135, 20)
         VM5Lbl.TabIndex = 40
@@ -60,7 +62,7 @@ Partial Class AdminDashboardForm
         ' VM4Lbl
         ' 
         VM4Lbl.AutoSize = True
-        VM4Lbl.Location = New Point(522, 382)
+        VM4Lbl.Location = New Point(522, 355)
         VM4Lbl.Name = "VM4Lbl"
         VM4Lbl.Size = New Size(135, 20)
         VM4Lbl.TabIndex = 39
@@ -69,7 +71,7 @@ Partial Class AdminDashboardForm
         ' VM3Lbl
         ' 
         VM3Lbl.AutoSize = True
-        VM3Lbl.Location = New Point(522, 325)
+        VM3Lbl.Location = New Point(522, 298)
         VM3Lbl.Name = "VM3Lbl"
         VM3Lbl.Size = New Size(135, 20)
         VM3Lbl.TabIndex = 38
@@ -78,7 +80,7 @@ Partial Class AdminDashboardForm
         ' VM2Lbl
         ' 
         VM2Lbl.AutoSize = True
-        VM2Lbl.Location = New Point(522, 268)
+        VM2Lbl.Location = New Point(522, 241)
         VM2Lbl.Name = "VM2Lbl"
         VM2Lbl.Size = New Size(135, 20)
         VM2Lbl.TabIndex = 37
@@ -87,7 +89,7 @@ Partial Class AdminDashboardForm
         ' VM1Lbl
         ' 
         VM1Lbl.AutoSize = True
-        VM1Lbl.Location = New Point(522, 211)
+        VM1Lbl.Location = New Point(522, 184)
         VM1Lbl.Name = "VM1Lbl"
         VM1Lbl.Size = New Size(135, 20)
         VM1Lbl.TabIndex = 36
@@ -96,7 +98,7 @@ Partial Class AdminDashboardForm
         ' VM6CKB
         ' 
         VM6CKB.AutoSize = True
-        VM6CKB.Location = New Point(742, 494)
+        VM6CKB.Location = New Point(742, 467)
         VM6CKB.Name = "VM6CKB"
         VM6CKB.Size = New Size(85, 24)
         VM6CKB.TabIndex = 35
@@ -106,7 +108,7 @@ Partial Class AdminDashboardForm
         ' VM5CKB
         ' 
         VM5CKB.AutoSize = True
-        VM5CKB.Location = New Point(742, 437)
+        VM5CKB.Location = New Point(742, 410)
         VM5CKB.Name = "VM5CKB"
         VM5CKB.Size = New Size(85, 24)
         VM5CKB.TabIndex = 34
@@ -116,7 +118,7 @@ Partial Class AdminDashboardForm
         ' VM4CKB
         ' 
         VM4CKB.AutoSize = True
-        VM4CKB.Location = New Point(742, 380)
+        VM4CKB.Location = New Point(742, 353)
         VM4CKB.Name = "VM4CKB"
         VM4CKB.Size = New Size(85, 24)
         VM4CKB.TabIndex = 33
@@ -126,7 +128,7 @@ Partial Class AdminDashboardForm
         ' VM3CKB
         ' 
         VM3CKB.AutoSize = True
-        VM3CKB.Location = New Point(742, 323)
+        VM3CKB.Location = New Point(742, 296)
         VM3CKB.Name = "VM3CKB"
         VM3CKB.Size = New Size(85, 24)
         VM3CKB.TabIndex = 32
@@ -136,7 +138,7 @@ Partial Class AdminDashboardForm
         ' VM2CKB
         ' 
         VM2CKB.AutoSize = True
-        VM2CKB.Location = New Point(742, 266)
+        VM2CKB.Location = New Point(742, 239)
         VM2CKB.Name = "VM2CKB"
         VM2CKB.Size = New Size(85, 24)
         VM2CKB.TabIndex = 31
@@ -146,7 +148,7 @@ Partial Class AdminDashboardForm
         ' VM1CKB
         ' 
         VM1CKB.AutoSize = True
-        VM1CKB.Location = New Point(742, 209)
+        VM1CKB.Location = New Point(742, 182)
         VM1CKB.Name = "VM1CKB"
         VM1CKB.Size = New Size(85, 24)
         VM1CKB.TabIndex = 30
@@ -175,18 +177,38 @@ Partial Class AdminDashboardForm
         ' 
         ' LogoutBtn
         ' 
-        LogoutBtn.Location = New Point(1201, 30)
+        LogoutBtn.Location = New Point(1212, 30)
         LogoutBtn.Name = "LogoutBtn"
-        LogoutBtn.Size = New Size(94, 29)
+        LogoutBtn.Size = New Size(100, 36)
         LogoutBtn.TabIndex = 42
         LogoutBtn.Text = "Logout"
         LogoutBtn.UseVisualStyleBackColor = True
+        ' 
+        ' ApplyBtn
+        ' 
+        ApplyBtn.Location = New Point(698, 582)
+        ApplyBtn.Name = "ApplyBtn"
+        ApplyBtn.Size = New Size(100, 36)
+        ApplyBtn.TabIndex = 43
+        ApplyBtn.Text = "Apply"
+        ApplyBtn.UseVisualStyleBackColor = True
+        ' 
+        ' RefreshBtn
+        ' 
+        RefreshBtn.Location = New Point(550, 582)
+        RefreshBtn.Name = "RefreshBtn"
+        RefreshBtn.Size = New Size(100, 36)
+        RefreshBtn.TabIndex = 44
+        RefreshBtn.Text = "Refresh"
+        RefreshBtn.UseVisualStyleBackColor = True
         ' 
         ' AdminDashboardForm
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1348, 721)
+        Controls.Add(RefreshBtn)
+        Controls.Add(ApplyBtn)
         Controls.Add(LogoutBtn)
         Controls.Add(VM6Lbl)
         Controls.Add(VM5Lbl)
@@ -223,4 +245,6 @@ Partial Class AdminDashboardForm
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents LogoutBtn As Button
+    Friend WithEvents ApplyBtn As Button
+    Friend WithEvents RefreshBtn As Button
 End Class
