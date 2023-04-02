@@ -21,7 +21,8 @@ Public Class LoginForm
                 reader.Close()
                 conn.Close() ' Don't forget to close the connection on a successful login :)
                 Me.Hide()
-                HomeForm.Show()
+                Dim homeForm As New HomeForm
+                homeForm.Show() 'Create new instance of login form to reload vending machine information
             End If
         Else
             MessageBox.Show("Login Failed")
