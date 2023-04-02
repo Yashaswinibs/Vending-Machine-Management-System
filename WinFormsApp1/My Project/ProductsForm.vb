@@ -8,6 +8,21 @@ Public Class ProductsForm
 
     Private Sub ProductsForm_Paint(sender As Object, e As EventArgs) Handles MyBase.Paint
         AvlTokensLbl.Text = LoginForm.loginInfo.Tokens
+        Dim ProductImages As New Dictionary(Of String, Image)
+        ProductImages.Add("Cheetos Flamin Hot", My.Resources.cheetosFlaminHot)
+        ProductImages.Add("Coke Zero (330 ml)", My.Resources.cokeZero)
+        ProductImages.Add("Fanta Family Pack (PC of 4)", My.Resources.fantaFamily)
+        ProductImages.Add("Kit-Kat Chocolate", My.Resources.kitkat)
+        ProductImages.Add("Lays Classic", My.Resources.laysClassic)
+        ProductImages.Add("Milk Carton (500 ml)", My.Resources.milkCarton)
+        ProductImages.Add("Mirinda (330 ml)", My.Resources.mirinda)
+        ProductImages.Add("Nescafe Cold Coffee", My.Resources.nescafeColdCoffee)
+        ProductImages.Add("Pringles", My.Resources.pringles)
+        ProductImages.Add("Red Bull", My.Resources.redBull)
+        ProductImages.Add("Snickers (45g)", My.Resources.snickersBar)
+        ProductImages.Add("Starbucks Espresso", My.Resources.starbucksEspresso)
+        ProductImages.Add("Toblerone", My.Resources.toblerone)
+
 
         conn.Open()
         Dim SqlQuery As String = $"SELECT PRODUCTS_AVAILABLE.ProductID, PRODUCTS.ProductName, PRODUCTS.ProductPrice FROM PRODUCTS_AVAILABLE INNER JOIN PRODUCTS ON PRODUCTS.ProductID = PRODUCTS_AVAILABLE.ProductID WHERE PRODUCTS_AVAILABLE.VMID = '{VendingMachineID}';"
@@ -18,18 +33,11 @@ Public Class ProductsForm
                 product.ProdName = reader("ProductName")
                 product.ProdID = reader("ProductID")
                 product.ProdPrice = reader("ProductPrice")
+                product.ProdImg.Image = ProductImages(product.ProdName)
             End If
         Next
         reader.Close()
         conn.Close()
-
-        Product1.ProdImg.Image = My.Resources.laysClassic
-        Product2.ProdImg.Image = My.Resources.kitkat
-        Product3.ProdImg.Image = My.Resources.cokeZero
-        Product4.ProdImg.Image = My.Resources.mirinda
-        Product5.ProdImg.Image = My.Resources.fantaFamily
-        Product6.ProdImg.Image = My.Resources.pringles
-        Product7.ProdImg.Image = My.Resources.toblerone
     End Sub
 
 
