@@ -2,18 +2,12 @@
 
 Public Class ProductsForm
     Private conn As SQLiteConnection = MainForm.conn
-    'Public DBProducts As New List(Of ProductBP) ' Products in the database
-    'Dim Products As New List(Of Product) ' Products in the form
-    Public Cart As New List(Of Product)
     Public VendingMachineID As String
-
+    Public Cart As New List(Of Product)
 
 
     Private Sub ProductsForm_Paint(sender As Object, e As EventArgs) Handles MyBase.Paint
-        'DBProducts.Clear()
-        'Products.Clear()
         AvlTokensLbl.Text = LoginForm.loginInfo.Tokens
-        'Products = GetProductList()
 
         conn.Open()
         Dim SqlQuery As String = $"SELECT PRODUCTS_AVAILABLE.ProductID, PRODUCTS.ProductName, PRODUCTS.ProductPrice FROM PRODUCTS_AVAILABLE INNER JOIN PRODUCTS ON PRODUCTS.ProductID = PRODUCTS_AVAILABLE.ProductID WHERE PRODUCTS_AVAILABLE.VMID = '{VendingMachineID}';"
@@ -36,12 +30,6 @@ Public Class ProductsForm
         Product5.ProdImg.Image = My.Resources.fantaFamily
         Product6.ProdImg.Image = My.Resources.pringles
         Product7.ProdImg.Image = My.Resources.toblerone
-
-        'For i = 0 To DBProducts.Count - 1
-        'Products(i).prodLbl.Text = DBProducts(i).ProdName
-        'Products(i).ProdPrice = DBProducts(i).ProdPrice
-        'Products(i).ProdID = DBProducts(i).ProdID
-        'Next
     End Sub
 
 
@@ -58,7 +46,6 @@ Public Class ProductsForm
 
 
     Private Sub backBtn_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles backBtn.LinkClicked
-        ' MessageBox.Show(VendingMachineID)
         Me.Hide()
         ClearInputsOnVMChange()
         HomeForm.Show()
@@ -87,4 +74,5 @@ Public Class ProductsForm
             product.UpdateSelectedLblQty()
         Next
     End Sub
+
 End Class
