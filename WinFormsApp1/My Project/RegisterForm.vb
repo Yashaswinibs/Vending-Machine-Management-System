@@ -7,6 +7,7 @@ Public Class RegisterForm
         Dim username As String = UsernameTB.Text
         Dim password As String = PasswordTB.Text
         Dim repeatedPassword As String = ConfirmPasswordTB.Text
+        Dim creditTokens As Integer = If(PromoOfferYes.Checked, 100, 0)
 
         If password <> repeatedPassword Then
             MessageBox.Show("Passwords Do Not Match")
@@ -14,7 +15,7 @@ Public Class RegisterForm
         Else
             Try
                 conn.Open()
-                Dim SqlQuery As String = $"INSERT INTO USERS VALUES ('{username}', '{password}', '{fullName}', 'user', 100);"
+                Dim SqlQuery As String = $"INSERT INTO USERS VALUES ('{username}', '{password}', '{fullName}', 'user', {creditTokens});"
                 Dim Cmd As New SQLiteCommand(SqlQuery, conn)
                 Dim RowsAffected As Integer = Cmd.ExecuteNonQuery()
                 If RowsAffected = 1 Then
@@ -43,5 +44,9 @@ Public Class RegisterForm
         ClearInputs()
         Me.Hide()
         MainForm.Show()
+    End Sub
+
+    Private Sub RadioButton1_CheckedChanged(sender As Object, e As EventArgs) Handles PromoOfferYes.CheckedChanged
+
     End Sub
 End Class
