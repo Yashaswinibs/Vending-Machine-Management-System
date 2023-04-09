@@ -58,7 +58,7 @@ Partial Class ProductsForm
         FlowLayoutPanel1.Location = New Point(42, 119)
         FlowLayoutPanel1.Margin = New Padding(1)
         FlowLayoutPanel1.Name = "FlowLayoutPanel1"
-        FlowLayoutPanel1.Size = New Size(1264, 562)
+        FlowLayoutPanel1.Size = New Size(1264, 687)
         FlowLayoutPanel1.TabIndex = 0
         ' 
         ' Product1
@@ -226,7 +226,7 @@ Partial Class ProductsForm
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1348, 721)
+        ClientSize = New Size(1348, 803)
         Controls.Add(backBtn)
         Controls.Add(CheckoutBtn)
         Controls.Add(Label1)

@@ -63,9 +63,9 @@ Partial Class MainForm
         ' 
         VendIT.AutoSize = True
         VendIT.Font = New Font("Impact", 28.2F, FontStyle.Regular, GraphicsUnit.Point)
-        VendIT.Location = New Point(408, 43)
+        VendIT.Location = New Point(424, 43)
         VendIT.Name = "VendIT"
-        VendIT.Size = New Size(166, 59)
+        VendIT.Size = New Size(134, 46)
         VendIT.TabIndex = 3
         VendIT.Text = "VendIT "
         ' 
@@ -73,15 +73,15 @@ Partial Class MainForm
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Segoe UI", 16.2F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point)
-        Label1.Location = New Point(290, 126)
+        Label1.Location = New Point(287, 126)
         Label1.Name = "Label1"
-        Label1.Size = New Size(534, 38)
+        Label1.Size = New Size(409, 30)
         Label1.TabIndex = 4
         Label1.Text = "Vending Machine Management System"
         ' 
         ' MainForm
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(982, 553)
         Controls.Add(Label1)

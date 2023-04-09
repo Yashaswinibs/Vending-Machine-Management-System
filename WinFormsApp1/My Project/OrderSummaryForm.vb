@@ -109,8 +109,11 @@ Public Class OrderSummaryForm
         Next
 
         ' Update user tokens
-        ' TODO
-
+        Dim username As String = LoginForm.loginInfo.Username
+        Dim TokensQuery As String = $"UPDATE users SET Tokens = Tokens - {OrderTotal} WHERE Username = '{username}';"
+        Dim TokensCmd As New SQLiteCommand(TokensQuery, conn)
+        TokensCmd.ExecuteNonQuery() ' Won't check for rows affected
+        LoginForm.loginInfo.Tokens -= OrderTotal ' Update token info which is stored in LoginForm
         conn.Close()
     End Sub
 
