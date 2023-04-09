@@ -40,6 +40,8 @@ Partial Class ProductsForm
         Label4 = New Label()
         CheckoutBtn = New Button()
         backBtn = New LinkLabel()
+        PaymentsMethodCB = New ComboBox()
+        Label3 = New Label()
         FlowLayoutPanel1.SuspendLayout()
         SuspendLayout()
         ' 
@@ -215,18 +217,39 @@ Partial Class ProductsForm
         ' 
         backBtn.AutoSize = True
         backBtn.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        backBtn.Location = New Point(1180, 22)
+        backBtn.Location = New Point(1180, 25)
         backBtn.Name = "backBtn"
         backBtn.Size = New Size(104, 25)
         backBtn.TabIndex = 9
         backBtn.TabStop = True
         backBtn.Text = "< Go Back"
         ' 
+        ' PaymentsMethodCB
+        ' 
+        PaymentsMethodCB.DropDownStyle = ComboBoxStyle.DropDownList
+        PaymentsMethodCB.FormattingEnabled = True
+        PaymentsMethodCB.Location = New Point(940, 65)
+        PaymentsMethodCB.Name = "PaymentsMethodCB"
+        PaymentsMethodCB.Size = New Size(175, 28)
+        PaymentsMethodCB.TabIndex = 10
+        ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label3.Location = New Point(940, 22)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(186, 28)
+        Label3.TabIndex = 11
+        Label3.Text = "Payment Method: "
+        ' 
         ' ProductsForm
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1348, 803)
+        Controls.Add(Label3)
+        Controls.Add(PaymentsMethodCB)
         Controls.Add(backBtn)
         Controls.Add(CheckoutBtn)
         Controls.Add(Label1)
@@ -262,4 +285,6 @@ Partial Class ProductsForm
     Friend WithEvents Label4 As Label
     Friend WithEvents CheckoutBtn As Button
     Friend WithEvents backBtn As LinkLabel
+    Public WithEvents PaymentsMethodCB As ComboBox
+    Friend WithEvents Label3 As Label
 End Class

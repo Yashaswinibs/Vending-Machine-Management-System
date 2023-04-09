@@ -83,4 +83,10 @@ Public Class ProductsForm
         Next
     End Sub
 
+    Private Sub ProductsForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        PaymentsMethodCB.Items.Add("UPI")
+        PaymentsMethodCB.Items.Add("Debit Card")
+        PaymentsMethodCB.Items.Add("Net Banking")
+        PaymentsMethodCB.SelectedIndex = 0 'Make UPI the default payment method
+    End Sub
 End Class

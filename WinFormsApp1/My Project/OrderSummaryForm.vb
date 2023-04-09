@@ -80,6 +80,8 @@ Public Class OrderSummaryForm
         End While
         UpdateDB()
         MessageBox.Show("Vend Successfull 🎉", "VendIT - Vending Machine Management System")
+        Me.Hide()
+        HomeForm.Show()
     End Sub
 
 
@@ -99,8 +101,10 @@ Public Class OrderSummaryForm
         ' Add transaction record to database
         For Each product As Product In OrderSummary.Keys
             Dim ProdId As String = product.ProdID
+            Dim VMID As String = ProductsForm.VendingMachineID
             Dim ProdQty As Integer = OrderSummary.Item(product)
-            Dim SqlQuery As String = $"INSERT INTO PURCHASES (VMID, ProductID, ProductQty, PaymentMethod) VALUES ('{ProductsForm.VendingMachineID}', '{ProdId}', {ProdQty}, 'UPI')"
+            Dim PaymentMethod As String = ProductsForm.PaymentsMethodCB.Text
+            Dim SqlQuery As String = $"INSERT INTO PURCHASES (VMID, ProductID, ProductQty, PaymentMethod) VALUES ('{VMID}', '{ProdId}', {ProdQty}, '{PaymentMethod}')"
             Dim Cmd As New SQLiteCommand(SqlQuery, conn)
             Dim RowsAffected = Cmd.ExecuteNonQuery()
             If Not RowsAffected = 1 Then
