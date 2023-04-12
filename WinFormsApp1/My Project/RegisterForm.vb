@@ -15,7 +15,7 @@ Public Class RegisterForm
         Else
             Try
                 conn.Open()
-                Dim SqlQuery As String = $"INSERT INTO USERS VALUES ('{username}', '{password}', '{fullName}', 'user', {creditTokens});"
+                Dim SqlQuery As String = $"INSERT INTO USERS VALUES ('{username}', '{password}', '{fullName}', {creditTokens});"
                 Dim Cmd As New SQLiteCommand(SqlQuery, conn)
                 Dim RowsAffected As Integer = Cmd.ExecuteNonQuery()
                 If RowsAffected = 1 Then
@@ -35,6 +35,7 @@ Public Class RegisterForm
     Private Sub ClearInputs()
         FullNameTB.Text = ""
         UsernameTB.Text = ""
+
         PasswordTB.Text = ""
         ConfirmPasswordTB.Text = ""
     End Sub
@@ -44,9 +45,5 @@ Public Class RegisterForm
         ClearInputs()
         Me.Hide()
         MainForm.Show()
-    End Sub
-
-    Private Sub RadioButton1_CheckedChanged(sender As Object, e As EventArgs) Handles PromoOfferYes.CheckedChanged
-
     End Sub
 End Class

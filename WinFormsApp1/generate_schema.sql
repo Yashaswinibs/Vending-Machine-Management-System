@@ -2,7 +2,6 @@ CREATE TABLE USERS (
 	Username	TEXT	PRIMARY KEY,
 	Password	TEXT	NOT NULL,
 	FullName	TEXT	NOT NULL,
-	Role		TEXT(8) NOT NULL,
 	Tokens		INTEGER DEFAULT(0)
 );
 
@@ -35,8 +34,7 @@ CREATE TABLE PRODUCTS_AVAILABLE (
 CREATE TABLE ADMINS (
 	Username	TEXT	PRIMARY KEY,
 	Password	TEXT	NOT NULL,
-	FullName	TEXT	NOT NULL,
-	Role		Text(8)	NOT NULL
+	FullName	TEXT	NOT NULL
 );
 
 
@@ -60,9 +58,9 @@ CREATE TABLE PURCHASES (
 
 -- ADMINS
 
-INSERT INTO ADMINS VALUES ('yash', 'admin', 'Yashaswini BS', 'Admin');
-INSERT INTO ADMINS VALUES ('admin', 'admin', 'Administrator', 'Admin');
-INSERT INTO ADMINS VALUES ('shakir', 'shakir035', 'Shakir Ali', 'Admin');
+INSERT INTO ADMINS VALUES ('yash', 'admin', 'Yashaswini BS');
+INSERT INTO ADMINS VALUES ('admin', 'admin', 'Administrator');
+INSERT INTO ADMINS VALUES ('shakir', 'shakir035', 'Shakir Ali');
 
 
 -- VENDING MACHINES
