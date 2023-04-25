@@ -7,6 +7,7 @@ Public Class ProductsForm
 
 
     Private Sub ProductsForm_Paint(sender As Object, e As EventArgs) Handles MyBase.Paint
+        'MessageBox.Show(VendingMachineID)
         AvlTokensLbl.Text = LoginForm.loginInfo.Tokens
         Dim ProductImages As New Dictionary(Of String, Image)
         ProductImages.Add("Cheetos Flamin Hot", My.Resources.cheetosFlaminHot)
@@ -43,7 +44,7 @@ Public Class ProductsForm
 
 
     Private Sub CheckoutBtn_Click(sender As Object, e As EventArgs) Handles CheckoutBtn.Click
-        If LoginForm.loginInfo.Tokens < CInt(CartValueLbl.Text) Then
+        If PaymentsMethodCB.Text = "Tokens" And LoginForm.loginInfo.Tokens < CInt(CartValueLbl.Text) Then
             MessageBox.Show("You Don't Have Enough Tokens To Complete This Purchase")
         Else
             Me.Hide()
@@ -84,9 +85,10 @@ Public Class ProductsForm
     End Sub
 
     Private Sub ProductsForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        PaymentsMethodCB.Items.Add("Tokens")
         PaymentsMethodCB.Items.Add("UPI")
         PaymentsMethodCB.Items.Add("Debit Card")
         PaymentsMethodCB.Items.Add("Net Banking")
-        PaymentsMethodCB.SelectedIndex = 0 'Make UPI the default payment method
+        PaymentsMethodCB.SelectedIndex = 0 'Make Tokens the default payment method
     End Sub
 End Class

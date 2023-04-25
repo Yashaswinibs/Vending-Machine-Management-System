@@ -3,6 +3,7 @@
 Public Class HomeForm
     Private conn As SQLiteConnection = MainForm.conn
     Private Sub HomeForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        UsernameLbl.Text = LoginForm.loginInfo.Fullname
         Dim Locations As New List(Of String)
         Dim VMStatus As New List(Of Integer)
         Dim VendingMachines = Me.Controls.OfType(Of GroupBox).ToList()
@@ -99,16 +100,22 @@ Public Class HomeForm
 
     Private Sub InteractBtnVM4_Click(sender As Object, e As EventArgs) Handles InteractBtnVM4.Click
         Me.Hide()
+        ProductsForm.Cart.Clear()
+        ProductsForm.VendingMachineID = "VMID0004"
         ProductsForm.Show()
     End Sub
 
     Private Sub InteractBtnVM5_Click(sender As Object, e As EventArgs) Handles InteractBtnVM5.Click
         Me.Hide()
+        ProductsForm.Cart.Clear()
+        ProductsForm.VendingMachineID = "VMID0005"
         ProductsForm.Show()
     End Sub
 
     Private Sub InteractBtnVM6_Click(sender As Object, e As EventArgs) Handles InteractBtnVM6.Click
         Me.Hide()
+        ProductsForm.Cart.Clear()
+        ProductsForm.VendingMachineID = "VMID0006"
         ProductsForm.Show()
     End Sub
 

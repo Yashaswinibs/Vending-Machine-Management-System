@@ -49,6 +49,7 @@ Partial Class HomeForm
         LocationVM6 = New Button()
         GreetingLbl = New Label()
         LogOutBtn = New Button()
+        UsernameLbl = New Label()
         VM1.SuspendLayout()
         VM3.SuspendLayout()
         VM4.SuspendLayout()
@@ -351,9 +352,9 @@ Partial Class HomeForm
         GreetingLbl.Font = New Font("Segoe UI Black", 16.2F, FontStyle.Bold, GraphicsUnit.Point)
         GreetingLbl.Location = New Point(24, 20)
         GreetingLbl.Name = "GreetingLbl"
-        GreetingLbl.Size = New Size(250, 38)
+        GreetingLbl.Size = New Size(155, 38)
         GreetingLbl.TabIndex = 5
-        GreetingLbl.Text = "Welcome, Shakir"
+        GreetingLbl.Text = "Welcome,"
         ' 
         ' LogOutBtn
         ' 
@@ -364,12 +365,23 @@ Partial Class HomeForm
         LogOutBtn.Text = "Log Out"
         LogOutBtn.UseVisualStyleBackColor = True
         ' 
+        ' UsernameLbl
+        ' 
+        UsernameLbl.AutoSize = True
+        UsernameLbl.Font = New Font("Segoe UI Black", 16.2F, FontStyle.Bold, GraphicsUnit.Point)
+        UsernameLbl.Location = New Point(171, 20)
+        UsernameLbl.Name = "UsernameLbl"
+        UsernameLbl.Size = New Size(99, 38)
+        UsernameLbl.TabIndex = 9
+        UsernameLbl.Text = "Name"
+        ' 
         ' HomeForm
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         AutoScroll = True
         ClientSize = New Size(1348, 721)
+        Controls.Add(UsernameLbl)
         Controls.Add(LogOutBtn)
         Controls.Add(GreetingLbl)
         Controls.Add(VM6)
@@ -418,4 +430,5 @@ Partial Class HomeForm
     Friend WithEvents LocationVM6 As Button
     Friend WithEvents GreetingLbl As Label
     Friend WithEvents LogOutBtn As Button
+    Friend WithEvents UsernameLbl As Label
 End Class
