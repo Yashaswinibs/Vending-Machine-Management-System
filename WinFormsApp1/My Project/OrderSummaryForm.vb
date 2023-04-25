@@ -10,16 +10,6 @@ Public Class OrderSummaryForm
     End Sub
 
 
-
-    Private Function GetPrice(Name As String) As Integer
-        conn.Open()
-        Dim SqlQuery As String = $"SELECT ProductPrice FROM PRODUCTS WHERE ProductName='{Name}'"
-        Dim Cmd As New SQLiteCommand(SqlQuery, conn)
-        Dim price = Cmd.ExecuteScalar()
-        conn.Close()
-        Return price
-    End Function
-
     Private Sub backBtn_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles backBtn.LinkClicked
         Me.Hide()
         ProductsForm.Show()
